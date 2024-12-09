@@ -149,3 +149,98 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         margin-top: 10px;
     }
 </style>
+
+<script type="module">
+    import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
+    const container = document.getElementById("culinaryposts");
+
+    async function fetchUser() {
+        const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
+        const user = await response.json();
+        console.log(user);
+        return user;
+    }
+
+    const user = fetchUser();
+
+    async function fetchChannels() {
+        try {
+            const groupName = 'Culinary Posts';
+            const responseData = {
+                group_name: groupName,
+            };
+            // add filter to get only messages from this channel
+            const response = await fetch(`${pythonURI}/api/channels/filter`, {
+                ...fetchOptions,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(responseData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch channels: ' + response.statusText);
+            }
+            const channels = await response.json();
+            container.innerHTML = "";
+
+            channels.forEach(channel => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                const title = document.createElement("h3");
+                title.classList.add("card-title");
+                title.textContent = channel.name;
+
+                const description = document.createElement("p");
+                description.classList.add("card-description");
+                description.textContent = channel.attributes["content"];
+
+                card.appendChild(title);
+                card.appendChild(description);
+
+                container.appendChild(card);
+            });
+        } catch (error) {
+            console.error('Error fetching channels:', error);
+        }
+    }
+
+    document.getElementById('channelForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const title = document.getElementById('title').value;
+        const content = document.getElementById('textArea').value;
+        const group_id = 13;
+
+        const channelData = {
+            name: title,
+            group_id: group_id,
+            attributes: {"content": content}
+        };
+
+        try {
+            const response = await fetch(`${pythonURI}/api/channel`, {
+                ...fetchOptions,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(channelData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to add channel: ' + response.statusText);
+            }
+
+            fetchChannels();
+            document.getElementById('channelForm').reset();
+        } catch (error) {
+            console.error('Error adding channel:', error);
+            alert('Error adding channel: ' + error.message);
+        }
+    });
+
+    fetchChannels();
+</script>
