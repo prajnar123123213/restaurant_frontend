@@ -19,8 +19,27 @@ menu: nav/share_and_care.html
 <body>
 
 <div class="myDiv">
-  <h2>Welcome to Asia!</h2>
-  <p>Explore a vast diverse continent with a rich history, vibrant culture, and breathtaking landscapes. From the bright cities of China to the bustling streets of India.</p>
+  <h2 style="
+    color: #ffbc2b; /* Orange */
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 2.5em; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 20px;">Welcome to Asia!</h2>
+  <p style="
+    color: #ffbc2b; /* Orange */
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 25px; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 10px;">Explore a vast diverse continent with a rich history, vibrant culture, and breathtaking landscapes. From the bright cities of China to the bustling streets of India.</p>
 </div>
+<p style="
+    color: #ffbc2b; /* Orange */
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 25px; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 10px;">Click below to explore some countries!</p>
+<a href=""
+    button class="button"> Button
+</a>
 </body>
 </html>
