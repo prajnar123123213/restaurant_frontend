@@ -33,11 +33,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let resultContainer = document.getElementById("result");
   
   // prepare URL
-  url = "http://127.0.0.1:5001/api/student";
+  url = "http://127.0.0.1:8887/api/students";
 
   // set options for cross origin header request
   let options = {
-    method: 'FETCH', // *GET, POST, PUT, DELETE, etc.
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'include', // include, *same-origin, omit
