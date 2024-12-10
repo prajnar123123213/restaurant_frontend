@@ -30,7 +30,7 @@ menu: nav/share_and_care.html
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
-    margin-top: 10px;">Explore a vast diverse continent with a rich history, vibrant culture, and breathtaking landscapes. From the bright cities of China to the bustling streets of India.</p>
+    margin-top: 10px;">Explore a vast diverse continent with a rich history, vibrant culture, and breathtaking landscapes. From the bright cities of China to the bustling streets of India, explore some of the restaurants and cuisines in Asia!</p>
 </div>
 <p style="
     color: #ffbc2b; /* Orange */
