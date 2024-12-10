@@ -19,8 +19,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <table id="demo" class="table">
   <thead>
       <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
+          <th>Name</th>
           <th>Role</th>
       </tr>
   </thead>
@@ -34,11 +33,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let resultContainer = document.getElementById("result");
   
   // prepare URL
-  url = "http://127.0.0.1:5001/api/data";
+  url = "http://127.0.0.1:5001/api/student";
 
   // set options for cross origin header request
   let options = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    method: 'FETCH', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'include', // include, *same-origin, omit
@@ -62,16 +61,13 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
           for (const row of data) {
             // tr and td build out for each row
             const tr = document.createElement("tr");
-            const firstname = document.createElement("td");
-            const lastname = document.createElement("td");
+            const name = document.createElement("td");
             const role = document.createElement("td");
             // data is specific to the API
-            firstname.innerHTML = row.FirstName; 
-            lastname.innerHTML = row.LastName; 
+            name.innerHTML = row.Name;
             role.innerHTML = row.Role; 
             // this builds each td into tr
-            tr.appendChild(firstname);
-            tr.appendChild(lastname);
+            tr.appendChild(name);
             tr.appendChild(role);
             // add HTML to container
             resultContainer.appendChild(tr);
