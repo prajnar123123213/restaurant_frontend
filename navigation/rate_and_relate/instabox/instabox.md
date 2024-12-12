@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Instabox
+title: Reviews
 search_exclude: true
 permalink: rate_and_relate/instabox
 menu: nav/rate_and_relate.html
-author: Aadi, Aaditya, Aditya, Kanhay
+author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
