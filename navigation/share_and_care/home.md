@@ -54,7 +54,7 @@ img {
 <center>
 <img src="{{site.baseurl}}/images/createandcompete/china.jpeg" alt= "China" width="500" height="500">
 </center>
-<a href=""
+<a href="https://mirabelle2025.github.io/flocker_frontend/chess/home"
     class="button"> Find Restaurants
 </a>
 </body>
