@@ -14,6 +14,25 @@ menu: nav/share_and_care.html
   background-color: rgb(196, 143, 215);    
   text-align: center;
 }
+img {
+  border: 5px solid rgb(234, 181, 236);
+}
+.button {
+  background-color: rgb(244, 236, 253); /* Matching purple shade */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(214, 200, 233); /* Slightly darker purple for hover effect */
+}
 </style>
 </head>
 <body>
@@ -36,7 +55,7 @@ menu: nav/share_and_care.html
 <img src="{{site.baseurl}}/images/createandcompete/china.jpeg" alt= "China" width="500" height="500">
 </center>
 <a href=""
-    button class="button"> Find Restaurants
+    class="button"> Find Restaurants
 </a>
 </body>
 </html>
