@@ -1,10 +1,11 @@
 ---
 toc: true
 layout: post
-title: Update the Nest
+title: About Me
 description:
 permalink: /rate_and_relate/update_the_nest/
 menu: nav/rate_and_relate.html
+author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 <style>
 .feedContainer {

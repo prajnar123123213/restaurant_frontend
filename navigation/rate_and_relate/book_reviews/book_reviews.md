@@ -1,10 +1,10 @@
 ---
 layout: post 
-title: Book Reviews
+title: RestaurantRadar
 search_exclude: true
 permalink: rate_and_relate/book_reviews/
 menu: nav/rate_and_relate.html
-author: Soumini, Ahmad, Nikith, Kush
+author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 <style>
   body {
