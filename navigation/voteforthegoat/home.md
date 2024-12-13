@@ -27,7 +27,7 @@ Welcome to Australia
     text-align: center; /* Centered text */
     margin-top: 20px;">Welcome to Australia!</h2>
   <p style="
-    color: #FCDBFF;
+    color:rgb(229, 113, 92);
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
@@ -41,3 +41,14 @@ Welcome to Australia
 </a>
 </body>
 </html>
+
+<div class="restaurant-row">
+    <div class="restaurant-item">
+        <h4>Quay Restaurant</h4>
+        <iframe src="https://maps.app.goo.gl/XFzTSe2edkWFWGgE6" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="restaurant-item">
+        <h4>Firedoor Farrarmare</h4>
+        <iframe src="https://maps.app.goo.gl/xw6PDHAg4CJFZEpo7" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
