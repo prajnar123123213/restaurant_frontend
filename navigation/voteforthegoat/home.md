@@ -45,10 +45,10 @@ Welcome to Australia
 <div class="restaurant-row">
     <div class="restaurant-item">
         <h4>Quay Restaurant</h4>
-        <iframe src="https://maps.app.goo.gl/XFzTSe2edkWFWGgE6" allowfullscreen="" loading="lazy"></iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2452954317346!2d151.20532079678952!3d-33.8575687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae5d0d1cc4e1%3A0x94f51e121cc41433!2sQuay%20Restaurant!5e0!3m2!1sen!2sus!4v1734115423802!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="restaurant-item">
         <h4>Firedoor Farrarmare</h4>
-        <iframe src="https://maps.app.goo.gl/xw6PDHAg4CJFZEpo7" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.625232477072!2d151.2073482755089!3d-33.881601773221725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae22808fb6c5%3A0xcaa68a28a42053bd!2sFiredoor%20Restaurant!5e0!3m2!1sen!2sus!4v1734115662601!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
