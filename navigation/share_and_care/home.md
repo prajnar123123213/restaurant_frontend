@@ -54,7 +54,7 @@ img {
 <center>
 <img src="{{site.baseurl}}/images/createandcompete/china.jpeg" alt= "China" width="500" height="500">
 </center>
-<a href="http://127.0.0.1:4887/restaurant_frontend/hangouts"
+<a href="https://prajnar123123213.github.io/restaurant_frontend/share_and_care/revvit/"
     class="button"> Find Restaurants
 </a>
 </body>
