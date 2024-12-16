@@ -31,6 +31,34 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     <div>
 </div>
 
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<section id="section-result">
+			<h1 id="result">Select your rating</h1>
+		</section>
+		<section id="section-rating">
+			<fieldset class='set'>
+					<input id="rd5" class="rd" name="rd" type="radio">
+					<label for="rd5" class="star fa fa-star-o fa-lg"></label>
+					<input id="rd4" class="rd" name="rd" type="radio">
+					<label for="rd4" class="star fa fa-star-o fa-lg"></label>
+					<input id="rd3" class="rd" name="rd" type="radio">
+					<label for="rd3" class="star fa fa-star-o fa-lg"></label>
+					<input id="rd2" class="rd" name="rd" type="radio">
+					<label for="rd2" class="star fa fa-star-o fa-lg"></label>
+					<input id="rd1" class="rd" name="rd" type="radio">
+					<label for="rd1" class="star fa fa-star-o fa-lg"></label>
+			</fieldset>
+		</section>
+		<script src="app.js"></script>
+        <p> 
+	</body>
+</html>
+
 <style>
     .main {
         display: flex;
@@ -243,3 +271,4 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
 
     fetchChannels();
 </script>
+
