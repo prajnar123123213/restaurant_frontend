@@ -2,8 +2,6 @@
 layout: post 
 title: About the Team!
 search_exclude: true
-permalink: /voteforthegoat/home
-menu: nav/vote_for_the_goat.html
 ---
 
 <!-- HTML table fragment for page -->
