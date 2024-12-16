@@ -7,19 +7,12 @@ menu: nav/create_and_compete.html
 author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 
-
-<h1>Access data from our Flask server using JavaScript</h1>
-
-<p>This code extracts data "live" from a local Web Server with JavaScript fetch.  Additionally, it formats the data into a table.</p>
-
-<!-- Head contains information to Support the Document -->
-
-
 <!-- HTML table fragment for page -->
 <table id="demo" class="table">
   <thead>
       <tr>
           <th>Name</th>
+          <th>Age</th>
           <th>Role</th>
       </tr>
   </thead>
@@ -58,22 +51,23 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       // valid response will contain json data
       response.json().then(data => {
           console.log(data);
-          for (const row of data) {
+          for (const row of data.students) {
             // tr and td build out for each row
             const tr = document.createElement("tr");
             const name = document.createElement("td");
+            const age = document.createElement("td");
             const role = document.createElement("td");
             // data is specific to the API
-            name.innerHTML = row.Name;
-            role.innerHTML = row.Role; 
+            name.innerHTML = row.name;
+            age.innerHTML = row.age;
+            role.innerHTML = row.role; 
             // this builds each td into tr
             tr.appendChild(name);
+            tr.appendChild(age);
             tr.appendChild(role);
             // add HTML to container
             resultContainer.appendChild(tr);
           }
       })
   })
-  
 </script>
-
