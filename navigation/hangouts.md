@@ -12,7 +12,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
-    margin-top: 30px
+    margin-top: 50px
 ">
     Welcome to Asia!
 </h1>
@@ -94,26 +94,30 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <h1 style="
     color: #FF8000; /* Orange */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 3.5em; /* Adjusted size for emphasis */
+    font-size: 20px; /* Adjusted size for emphasis */
 ">
     India
 </h1>
-
+<div class="restaurant-row">
+    <div class="restaurant-item">
 <h4 style="
     color: #826b64 !important;"> Indian Accent (इंडियन एक्सेंट)</h4>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57397489.5483493!2d3.4100973999999593!3d28.59183360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd309eebed77%3A0xfd133b52e7612c26!2sIndian%20Accent!5e0!3m2!1sen!2sus!4v1734115500662!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    </div>
+</div>
+
 <h1 style="
     color: #FFFFF; /* White */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 3.5em; /* Adjusted size for emphasis */
+    font-size: 20px; /* Adjusted size for emphasis */
 ">
     Japan
 </h1>
 
 <h4 style="
-    color: #826b64 !important;"> Mesti Restaurant </h4>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4035058.949857512!2d34.59405017677945!3d9.019237200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85af81997095%3A0xb157cd963137f231!2sMesti%20Restaurant!5e0!3m2!1sen!2sus!4v1733297824900!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    color: #826b64 !important;"> GYOPAO Gyoza Roppongi </h4>
+<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51864.716867158815!2d139.66004212167965!3d35.6635851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b82a9127f3d%3A0xa387ac54965052f1!2sGYOPAO%20Gyoza%20Roppongi!5e0!3m2!1sen!2sus!4v1734372471199!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <h1>Access data from our Flask server using JavaScript</h1>
 
