@@ -1,199 +1,219 @@
 ---
 toc: true
 layout: post
-title: About Me
+title: Recipe Upload 
 description:
 permalink: /rate_and_relate/update_the_nest/
 menu: nav/rate_and_relate.html
 author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
-<style>
-.feedContainer {
-    transform: translateY(-90px);
-}
 
-.postFeed {
-    border: 6px solid black;
-    background-color: #FBC3C3;
-    border-color: #F5E1E7;
-    border-radius: 50px;
-    height: 350px;
-    margin-bottom: 12px;
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-.textContainer {
-    transform: translateY(20px)
-}
-
-.textInfo {
-    transform: translateY(30px)
-}
-
-.imageContainer {
-    height: auto;
-    display: inline;
-    float: left;
-    width: 55%;
-    transform: translateX(5px) translateY(50px);
-    text-align: center;
-}
-
-.imageContainer > img {
-    width: 50%;
-    display: inline-block;
-}
-
-.feed {
-    border: 10px solid black;
-    border-radius: 50px;
-    background-color: pink;
-    text-align: center;
-    padding: 100px 0 3px 0;
-    height: auto;
-    font-family: 'Playfair Display', serif;
-    float: left;
-}
-
-.header {
-        border: 10px solid black;
-        border-radius: 50px;
-        background-color: pink;
-        text-align: center;
-        padding: 5px 0 3px 0;
-        height: 200px;
-        font-family: 'Playfair Display', serif;
-    }
-
-  .headerImage > img {
-    height: auto;
-    display: inline;
-    width: 15%;
-    float: left;
-    transform: translateX(30px) translateY(-80px);
-  }
-
-.styled-button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Recipe Upload and Comments</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffecec; /* Light red background */
+            color: #7a0a0a; /* Dark red text */
+            margin: 0;
+            padding: 20px;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 12px;
-            transition: background-color 0.3s, transform 0.2s;
-            transform: translateX(-70px) translateY(10px);
         }
- .upload_box {
-    position: fixed;            
-    top: 50%;                   
-    left: 50%;                
-    transform: translate(-50%, -30%);
-    background-color: #FBC3C3;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    height: auto;
-    text-align: center;
-}
-
-.upload_box #textInput {
-    width: 100%; 
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    margin-bottom: 10px; 
-}
-
-.upload_box .post-button {
-   transform: translateX(150px)
-}
-
-.upload_box .exit-button {
-   transform: translateX(125px) translateY(-100px);
-}
-
-</style>
-
-<div style="text-align: center;" class="header">
-    <h1> Update the Nest </h1>
-    <div class="headerImage">
-        <img src="{{site.baseurl}}/images/about/CSP_LOGO-removebg-preview.png" style="display: block; margin: 0 auto;" alt="Logo">
-    </div>
-    <div class="headerText">
-        <button class="styled-button"><a href="">Upload Media</a></button>
-    </div>
-</div>
-
-<div class="feed">
-    <div class="feedContainer" id="feedContainer">
-    <h1> Feed </h1>
-        <div class="postFeed">
-            <div class="imageContainer">
-                <img src="{{site.baseurl}}/images/tempPhoto.jpg">
-            </div>
-            <div class="textContainer">
-                <h3>Caption</h3><br>
-                <div class="textInfo">
-                    <p>Posted by: Abby Manalo</p><p>Date Posted: 10/25/24</p>
-                </div>
-            </div>
+        h1 {
+            color: #d9534f; /* Vibrant red */
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 2.8em;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #f8d7da; /* Soft red background for container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="file"], input[type="text"], textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #d9534f; /* Red borders */
+            border-radius: 4px;
+        }
+        button {
+            background-color: #d9534f; /* Vibrant red button */
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c9302c; /* Darker red */
+        }
+        /* Brighter red upload area */
+        .upload-area {
+            background-color: #f44236; /* Brighter red for the upload area */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-post {
+            margin-top: 20px;
+            background-color: #fff3f3; /* Light red background for posts */
+            padding: 15px;
+            border: 1px solid #d9534f;
+            border-radius: 8px;
+        }
+        .recipe-post img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .comments, .general-comments {
+            margin-top: 15px;
+            text-align: left;
+        }
+        .comment, .general-comment {
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #fce4e4; /* Light red for comments */
+            border-radius: 4px;
+        }
+        /* General comments section */
+        .general-comments {
+            margin-top: 30px;
+            background-color: #7a0a0a; /* Dark red background */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .general-comments h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .general-comment {
+            background-color: #c9302c; /* Slightly lighter dark red for individual comments */
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your Recipe and Comments</h1>
+    <div class="container">
+        <!-- Form to upload an image and description -->
+        <div class="upload-area">
+            <form id="uploadForm">
+                <label for="imageUpload">Upload Recipe Image:</label>
+                <input type="file" id="imageUpload" accept="image/*" required>
+                <label for="description">Recipe Description:</label>
+                <input type="text" id="description" placeholder="Write a description for the recipe..." required>
+                <button type="button" onclick="uploadRecipe()">Upload Recipe</button>
+            </form>
         </div>
-</div>
-
-<div class="upload_box">
-    <button class="toggle-button" onclick="toggleDiv()">Camera</button> <br>
-    <text class="content-div"></text>
-    <label for="textInput">Enter caption:</label>
-    <input type="text" id="textInput" placeholder="Type something...">
-    <button class="post-button">post</button>
-    <button class="exit-button">x</button>
-</div>
-
-<script type="module">
-import { createImagePost } from '{{site.baseurl}}/assets/js/createRateAndRelateFeedList.js';
-import { pythonURI, fetchOptions } from '{{site.baseurl}}/assets/js/api/config.js';
-
-const postApiUrl = `${pythonURI}/api/nestPost`;
-
-async function generatePosts() {
-    try {
-        // Define the fetch requests
-        const postApiRequest = fetch(postApiUrl, fetchOptions);
-        // Run all fetch requests concurrently
-        const [postApiResponse] = await Promise.all([
-            postApiRequest
-        ]);
-        // Check for errors in the responses
-        if (!postApiResponse.ok) {
-            throw new Error('Failed to fetch post API links: ' + postApiResponse.statusText);
-        }        
-        // Parse the JSON data
-        const postData = await postApiResponse.json();
-
-        // Iterate over the postData and create HTML elements for each item
-        const feedList = document.getElementById("feedContainer")
-        // Create an array of promises
-        const postPromises = [];
-
-        postData.forEach(postItem => {
-            // Use imported function
-            postPromises.push(createImagePost(postItem).then(postElement => {
-                feedList.appendChild(postElement);
-            }));
-        });
-        await Promise.all(postPromises);
-
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
-
-generatePosts()
-</script>
+        <!-- Display uploaded posts -->
+        <div id="postsContainer"></div>
+    </div>
+    <!-- General comments section -->
+    <div class="general-comments">
+        <h2>General Comments</h2>
+        <textarea id="generalCommentInput" placeholder="Write your comment here..."></textarea>
+        <button onclick="addGeneralComment()">Post Comment</button>
+        <div id="generalCommentsContainer">
+            <!-- General comments will appear here -->
+        </div>
+    </div>
+    <script>
+        const posts = []; // Array to hold posts with images and descriptions
+        const generalComments = []; // Array to hold general comments
+        // Function to handle uploading a recipe
+        function uploadRecipe() {
+            const imageInput = document.getElementById('imageUpload');
+            const descriptionInput = document.getElementById('description');
+            const postsContainer = document.getElementById('postsContainer');
+            // Check if an image and description were provided
+            if (imageInput.files.length === 0 || descriptionInput.value.trim() === '') {
+                alert('Please upload an image and provide a description.');
+                return;
+            }
+            // Create a FileReader to display the uploaded image
+            const file = imageInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const imageUrl = e.target.result; // Base64 image URL
+                const description = descriptionInput.value;
+                // Create a new post
+                const post = {
+                    imageUrl,
+                    description,
+                    comments: []
+                };
+                posts.push(post);
+                // Clear the form
+                imageInput.value = '';
+                descriptionInput.value = '';
+                // Display the updated posts
+                renderPosts(postsContainer);
+            };
+            reader.readAsDataURL(file);
+        }
+        // Function to render posts with images, descriptions, and comments
+        function renderPosts(container) {
+            container.innerHTML = ''; // Clear previous content
+            posts.forEach((post, index) => {
+                const postElement = document.createElement('div');
+                postElement.classList.add('recipe-post');
+                // Create HTML for the post
+                postElement.innerHTML = `
+                    <img src="${post.imageUrl}" alt="Recipe Image">
+                    <p><strong>Description:</strong> ${post.description}</p>
+                    <div class="comments" id="comments-${index}">
+                        <h4>Comments:</h4>
+                        ${post.comments.map(comment => `<div class="comment">${comment}</div>`).join('')}
+                        <textarea id="commentInput-${index}" placeholder="Write a comment..."></textarea>
+                        <button onclick="addComment(${index})">Add Comment</button>
+                    </div>
+                `;
+                container.appendChild(postElement);
+            });
+        }
+        // Function to add a comment to a specific post
+        function addComment(postIndex) {
+            const commentInput = document.getElementById(`commentInput-${postIndex}`);
+            const commentText = commentInput.value.trim();
+            if (commentText !== '') {
+                posts[postIndex].comments.push(commentText);
+                commentInput.value = ''; // Clear input field
+                renderPosts(document.getElementById('postsContainer')); // Re-render posts
+            } else {
+                alert('Please enter a valid comment.');
+            }
+        }
+        // Function to add a general comment
+        function addGeneralComment() {
+            const commentInput = document.getElementById('generalCommentInput');
+            const commentText = commentInput.value.trim();
+            const commentsContainer = document.getElementById('generalCommentsContainer');
+            if (commentText !== '') {
+                generalComments.push(commentText);
+                commentInput.value = ''; // Clear input field
+                renderGeneralComments(commentsContainer);
+            } else {
+                alert('Please enter a valid comment.');
+            }
+        }
+        // Function to render general comments
+        function renderGeneralComments(container) {
+            container.innerHTML = ''; // Clear previous content
+            generalComments.forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.classList.add('general-comment');
+                commentElement.textContent = comment;
+                container.appendChild(commentElement);
+            });
+        }
+    </script>
+</body>
