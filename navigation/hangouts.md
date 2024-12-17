@@ -46,7 +46,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 </style>
 
 <h1 style="
-    color: #E8293C; /* Red */
+    color:rgb(157, 44, 78); /* Red */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 50px; /* Adjusted size for emphasis */
 ">
@@ -76,7 +76,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     .restaurant-item h4 {
         font-size: 1.5em;
         font-weight: bold;
-        color: #826b64;
+        color:rgb(135, 88, 74);
     }
 </style>
 
@@ -113,8 +113,8 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     Japan
 </h1>
 <h4 style="
-    color: #826b64 !important;"> Hakumaru </h4>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54813371.056550846!2d169.0606994!3d33.01583080000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf7006d81e431%3A0x9b0f38033fb61b12!2sHakumaru!5e0!3m2!1sen!2sus!4v1734374940022!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    color: #826b64 !important;"> GYOPAO Gyoza Roppongi </h4>
+<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51864.716867158815!2d139.66004212167965!3d35.6635851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b82a9127f3d%3A0xa387ac54965052f1!2sGYOPAO%20Gyoza%20Roppongi!5e0!3m2!1sen!2sus!4v1734372471199!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <h1>Access data from our Flask server using JavaScript</h1>
 
