@@ -6,7 +6,7 @@ permalink: /create_and_compete/elevatorpitch
 menu: nav/create_and_compete.html
 author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
-
+<center>
 <h1 style="
     color: #d2b48c; /* Light brown (Tan) */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
@@ -14,7 +14,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ">
     South Africa
 </h1>
-
+</center>
 <style>
     .restaurant-row {
         display: flex;
