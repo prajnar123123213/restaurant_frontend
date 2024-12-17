@@ -10,9 +10,9 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <h1 style="
     color: #FCDBFF;
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 25px; /* Adjusted size for emphasis */
+    font-size: 3.5em; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
-    margin-top: 50px
+    margin-top: 3.5em
 ">
     Welcome to Asia!
 </h1>
@@ -48,7 +48,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <h1 style="
     color: #E8293C; /* Red */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 3.5em; /* Adjusted size for emphasis */
+    font-size: 50px; /* Adjusted size for emphasis */
 ">
     China
 </h1>
@@ -94,7 +94,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <h1 style="
     color: #FF8000; /* Orange */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 20px; /* Adjusted size for emphasis */
+    font-size: 50px; /* Adjusted size for emphasis */
 ">
     India
 </h1>
@@ -110,7 +110,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <h1 style="
     color: #FFFFF; /* White */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 20px; /* Adjusted size for emphasis */
+    font-size: 50px; /* Adjusted size for emphasis */
 ">
     Japan
 </h1>
