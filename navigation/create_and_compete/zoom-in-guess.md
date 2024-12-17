@@ -6,10 +6,11 @@ permalink: /create_and_compete/zoominguess
 menu: nav/create_and_compete.html
 author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
-
+<center>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>African Recipes Finder</title>
+</center>
  <style>
     body {
         font-family: Arial, sans-serif;
