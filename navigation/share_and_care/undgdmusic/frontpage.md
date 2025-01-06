@@ -14,7 +14,6 @@ permalink: /undgdmusic/
         body {
             font-family: 'Arial', sans-serif;
             background-color: #4B0082; /* Purple background */
-            color: #fff;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -70,10 +69,11 @@ permalink: /undgdmusic/
         }
         .chat-messages {
             text-align: left;
+            text-color:
             height: 150px;
             overflow-y: auto;
-            background-color: #fff;
-            color: #333;
+            background-color: #FFFFFF;
+            color: #0000FF;
             padding: 10px;
             border-radius: 5px;
         }
@@ -130,9 +130,11 @@ permalink: /undgdmusic/
         function sendMessage() {
             const input = document.getElementById("chatInput");
             const message = input.value.trim();
+            console.log('Chat Input', message);
             if (message) {
                 const chatBox = document.getElementById("chatMessages");
-                chatBox.innerHTML += `<p><strong>User:</strong> ${message}</p>`;
+                console.log('chatBox', `<h6>${message}</h6>`);
+                chatBox.innerHTML += `<p class="chat-text"><strong>User:</strong> ${message}</p>`;
                 input.value = "";
                 chatBox.scrollTop = chatBox.scrollHeight;
             }
