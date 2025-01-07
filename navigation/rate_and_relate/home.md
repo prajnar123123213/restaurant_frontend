@@ -20,3 +20,4 @@ menu: nav/rate_and_relate.html
 <center>
 <img src="{{site.baseurl}}/images/createandcompete/southamerica.jpg" alt= "South America" width="500" height="500">
 </center>
+

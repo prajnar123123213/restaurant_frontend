@@ -28,12 +28,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
                 <button type="submit">Post</button>
             </form>
         </div>
-        <div id="culinaryposts"></div>
+        <div id="instabox"></div>
     <div>
 </div>
 
-<!--style changed to match font colors-->
-<style> 
+<style>
     .main {
         display: flex;
     }
@@ -48,7 +47,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     /* Form Styling */
     .form-container {
         padding: 20px;
-        background-color:rgb(192, 75, 25); /* Reddish brown background */
+        background-color: #ffe4e1; /* Light pink background */
         border-radius: 12px;
         width: calc(100% - 400px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -66,22 +65,22 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid rgb(206, 187, 179); /* Beige border */
+        border: 1px solid #ffb6c1; /* Soft pink border */
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color:rgb(210, 136, 105); /* tan field */
-        color:rgb(112, 45, 16); /* Dark brown text */
+        background-color: #fff0f5; /* Light pink field */
+        color: #d147a3; /* Deep pink text */
     }
 
     #textArea {
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid rgb(206, 187, 179);
+        border: 1px solid #ffb6c1;
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color:rgb(206, 187, 179);
-        color:rgb(192, 75, 25);
+        background-color: #fff0f5;
+        color: #d147a3;
         margin-top: 10px;
         resize: none;
         height: 100px;
@@ -91,17 +90,17 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     #imageUpload {
         padding: 5px;
         border-radius: 8px;
-        border: 1px rgb(210, 136, 105);
+        border: 1px solid #ffb6c1;
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
-        background-color:rgb(206, 187, 179);
-        color:rgb(192, 75, 25);
+        background-color: #fff0f5;
+        color: #d147a3;
     }
 
     button[type="submit"] {
         align-self: flex-start;
         padding: 10px 20px;
-        background-color:rgb(192, 75, 25); /* Reddish brown button */
+        background-color: #ff69b4; /* Hot pink button */
         color: white;
         border: none;
         border-radius: 8px;
@@ -114,11 +113,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     }
 
     button[type="submit"]:hover {
-        background-color:rgb(141, 53, 15); /* Dark brown on hover */
+        background-color: #d147a3; /* Deeper pink on hover */
     }
 
     /* Channels Container */
-    #culinaryposts {
+    #instabox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -131,7 +130,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: calc(50% - 20px);
         min-width: 300px;
         padding: 20px;
-        background-color:rgb(206, 187, 179);
+        background-color: #ffe4e1;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         text-align: left;
@@ -141,11 +140,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     .card-title {
         font-size: 1.2em;
         font-weight: bold;
-        color: rgb(192, 75, 25);
+        color: #d147a3;
     }
 
     .card-description {
-        color:rgb(192, 75, 25);
+        color: #d147a3;
         font-size: 1em;
         margin-top: 10px;
     }
@@ -153,7 +152,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
-    const container = document.getElementById("culinaryposts");
+    const container = document.getElementById("instabox");
 
     async function fetchUser() {
         const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
@@ -166,7 +165,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     async function fetchChannels() {
         try {
-            const groupName = 'Culinary Posts';
+            const groupName = 'Instabox';
             const responseData = {
                 group_name: groupName,
             };
@@ -213,7 +212,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 13;
+        const group_id = 28;
 
         const channelData = {
             name: title,
