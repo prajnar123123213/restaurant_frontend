@@ -140,4 +140,154 @@ permalink: /undgdmusic/
             }
         }
     </script>
+    
+<script type="module">
+    import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
+    const container = document.getElementById("culinaryposts");
+
+    async function fetchUser() {
+        const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
+        const user = await response.json();
+        console.log(user);
+        return user;
+    }
+
+    const user = fetchUser();
+
+    async function fetchChannels() {
+        try {
+            const groupName = 'Culinary Posts';
+            const responseData = {
+                group_name: groupName,
+            };
+            // add filter to get only messages from this channel
+            const response = await fetch(`${pythonURI}/api/channels/filter`, {
+                ...fetchOptions,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(responseData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch channels: ' + response.statusText);
+            }
+            const channels = await response.json();
+            container.innerHTML = "";
+
+            channels.forEach(channel => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                const title = document.createElement("h3");
+                title.classList.add("card-title");
+                title.textContent = channel.name;
+
+                const description = document.createElement("p");
+                description.classList.add("card-description");
+                description.textContent = channel.attributes["content"];
+
+                card.appendChild(title);
+                card.appendChild(description);
+
+                container.appendChild(card);
+            });
+        } catch (error) {
+            console.error('Error fetching channels:', error);
+        }
+    }
+
+    document.getElementById('channelForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const title = document.getElementById('title').value;
+        const content = document.getElementById('textArea').value;
+        const group_id = 13;
+
+        const channelData = {
+            name: title,
+            group_id: group_id,
+            attributes: {"content": content}
+        };
+
+        try {
+            const response = await fetch(`${pythonURI}/api/channel`, {
+                ...fetchOptions,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(channelData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to add channel: ' + response.statusText);
+            }
+
+            fetchChannels();
+            document.getElementById('channelForm').reset();
+        } catch (error) {
+            console.error('Error adding channel:', error);
+            alert('Error adding channel: ' + error.message);
+        }
+    });
+
+    fetchChannels();
+</script>
+
+<script>
+/**
+ * Calculate new latitude and longitude from a starting point, distance, and bearing.
+ * @param {number} lat - Latitude of the starting point (in degrees).
+ * @param {number} lon - Longitude of the starting point (in degrees).
+ * @param {number} distance - Distance to travel (in kilometers).
+ * @param {number} bearing - Direction of travel (in degrees from North).
+ * @returns {object} - Object with new latitude and longitude.
+ */
+function calculateNewCoordinates(lat, lon, distance, bearing) {
+    const R = 6371; // Earth's radius in kilometers
+
+    // Convert latitude, longitude, and bearing to radians
+    const latRad = (lat * Math.PI) / 180;
+    const lonRad = (lon * Math.PI) / 180;
+    const bearingRad = (bearing * Math.PI) / 180;
+
+    // Calculate new latitude
+    const newLatRad = Math.asin(
+        Math.sin(latRad) * Math.cos(distance / R) +
+        Math.cos(latRad) * Math.sin(distance / R) * Math.cos(bearingRad)
+    );
+
+    // Calculate new longitude
+    const newLonRad = lonRad + Math.atan2(
+        Math.sin(bearingRad) * Math.sin(distance / R) * Math.cos(latRad),
+        Math.cos(distance / R) - Math.sin(latRad) * Math.sin(newLatRad)
+    );
+
+    // Convert back to degrees
+    const newLat = (newLatRad * 180) / Math.PI;
+    const newLon = (newLonRad * 180) / Math.PI;
+
+    return {
+        latitude: newLat,
+        longitude: newLon
+    };
+}
+
+// Example Usage
+const startPoint = { latitude: 37.7749, longitude: -122.4194 }; // San Francisco
+const distance = 50; // 50 kilometers
+const bearing = 45; // 45 degrees (Northeast)
+
+const newPoint = calculateNewCoordinates(
+    startPoint.latitude,
+    startPoint.longitude,
+    distance,
+    bearing
+);
+
+console.log(`New Coordinates: Latitude = ${newPoint.latitude}, Longitude = ${newPoint.longitude}`);
+</script>
+
 </body>
