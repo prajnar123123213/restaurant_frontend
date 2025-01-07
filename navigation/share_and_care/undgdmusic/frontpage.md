@@ -140,7 +140,7 @@ permalink: /undgdmusic/
             }
         }
     </script>
-    
+
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
     const container = document.getElementById("culinaryposts");
@@ -289,5 +289,3 @@ const newPoint = calculateNewCoordinates(
 
 console.log(`New Coordinates: Latitude = ${newPoint.latitude}, Longitude = ${newPoint.longitude}`);
 </script>
-
-</body>
