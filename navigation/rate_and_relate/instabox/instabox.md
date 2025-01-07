@@ -32,7 +32,8 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     <div>
 </div>
 
-<style>
+<!--style changed to match font colors-->
+<style> 
     .main {
         display: flex;
     }
