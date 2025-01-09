@@ -215,7 +215,7 @@ h1 {
 /* lighten current selection */
 
 .rating>input:checked~label:hover~label {
-  color: #ff8080;
+  color:rgb(255, 255, 255);
 }
 </style>
 

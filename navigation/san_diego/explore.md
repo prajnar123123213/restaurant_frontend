@@ -14,7 +14,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #FFC0CB; /* Light pink background */
+    background-color:rgb(255, 255, 255); /* Light pink background */
     color: #8B008B; /* Dark pink text color */
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
@@ -43,7 +43,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   }
 
   tr:nth-child(odd) {
-    background-color: #FFC0CB; /* Base light pink for odd rows */
+    background-color:rgb(255, 255, 255); /* Base light pink for odd rows */
   }
 
   /* Hover effect */

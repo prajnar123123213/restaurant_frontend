@@ -47,7 +47,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     /* Form Styling */
     .form-container {
         padding: 20px;
-        background-color: #ffe4e1; /* Light pink background */
+        background-color:rgb(255, 178, 196); /* Light pink background */
         border-radius: 12px;
         width: calc(100% - 400px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         border: 1px solid #ffb6c1; /* Soft pink border */
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5; /* Light pink field */
+        background-color:rgb(255, 149, 184); /* Light pink field */
         color: #d147a3; /* Deep pink text */
     }
 
@@ -79,7 +79,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         border: 1px solid #ffb6c1;
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5;
+        background-color:rgb(255, 186, 209);
         color: #d147a3;
         margin-top: 10px;
         resize: none;
@@ -93,7 +93,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         border: 1px solid #ffb6c1;
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5;
+        background-color:rgb(252, 182, 205);
         color: #d147a3;
     }
 
@@ -130,7 +130,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: calc(50% - 20px);
         min-width: 300px;
         padding: 20px;
-        background-color: #ffe4e1;
+        background-color:rgb(249, 186, 206);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         text-align: left;
@@ -140,7 +140,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     .card-title {
         font-size: 1.2em;
         font-weight: bold;
-        color: #d147a3;
+        color:rgb(209, 71, 161);
     }
 
     .card-description {

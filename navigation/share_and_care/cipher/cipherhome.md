@@ -221,7 +221,7 @@ permalink: /cipherhome/
 
 <!-- Level 9 Button -->
 <a href="/flocker_frontend/levelnine/" style="text-decoration: none;">
-    <div style="display: flex; align-items: center; background-color: #FFC0CB; color: #4e4b9b; width: 100%; padding: 20px; border-radius: 10px; border: 2px solid #6a5acd; text-align: left; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 1.2em;">
+    <div style="display: flex; align-items: center; background-color:rgb(255, 255, 255); color: #4e4b9b; width: 100%; padding: 20px; border-radius: 10px; border: 2px solid #6a5acd; text-align: left; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 1.2em;">
         <div style="flex-grow: 1;">
             <strong>Level 9: God ✨</strong><br>
             ☄️ Celestial cipher powers.<br>
