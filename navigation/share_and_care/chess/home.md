@@ -30,18 +30,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
         <div id="culinaryposts"></div>
     <div>
 </div>
-<fieldset class="rating">
-  <input type="radio" id="1star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-  <input type="radio" id="1star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-  <input type="radio" id="1star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-  <input type="radio" id="1star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-  <input type="radio" id="1star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-  <input type="radio" id="1star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-  <input type="radio" id="1star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-  <input type="radio" id="1star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-  <input type="radio" id="1star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-  <input type="radio" id="1starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-  
+
 <style>
     
     .main {
@@ -58,7 +47,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     /* Form Styling */
     .form-container {
         padding: 20px;
-        background-color: #ffe4e1; /* Light pink background */
+        background-color:rgb(174, 98, 200); /* Deep purple background */
         border-radius: 12px;
         width: calc(100% - 400px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -76,22 +65,22 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1; /* Soft pink border */
+        border: 1px solid rgb(195, 132, 219); /* Soft purple border */
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5; /* Light pink field */
-        color: #d147a3; /* Deep pink text */
+        background-color:rgb(239, 188, 255); /* Light purple field */
+        color:rgb(139, 53, 165); /* Deep purple text */
     }
 
     #textArea {
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1;
+        border: 1px solid rgb(231, 163, 253);
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5;
-        color: #d147a3;
+        background-color:rgb(238, 207, 252);
+        color:rgb(154, 71, 209);
         margin-top: 10px;
         resize: none;
         height: 100px;
@@ -101,17 +90,17 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     #imageUpload {
         padding: 5px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1;
+        border: 1px solidrgb(246, 182, 255);
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
         background-color: #fff0f5;
-        color: #d147a3;
+        color:rgb(186, 71, 209);
     }
 
     button[type="submit"] {
         align-self: flex-start;
         padding: 10px 20px;
-        background-color: #ff69b4; /* Hot pink button */
+        background-color:rgb(198, 89, 238); /* Bright Purple button */
         color: white;
         border: none;
         border-radius: 8px;
@@ -124,7 +113,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     }
 
     button[type="submit"]:hover {
-        background-color: #d147a3; /* Deeper pink on hover */
+        background-color:rgb(136, 51, 160); /* Deeper purple on hover */
     }
 
     /* Channels Container */
@@ -141,7 +130,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
         width: calc(50% - 20px);
         min-width: 300px;
         padding: 20px;
-        background-color: #ffe4e1;
+        background-color:rgb(247, 170, 255);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         text-align: left;
@@ -151,11 +140,11 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     .card-title {
         font-size: 1.2em;
         font-weight: bold;
-        color: #d147a3;
+        color:rgb(150, 50, 170);
     }
 
     .card-description {
-        color: #d147a3;
+        color:rgb(153, 63, 180);
         font-size: 1em;
         margin-top: 10px;
     }

@@ -47,7 +47,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     /* Form Styling */
     .form-container {
         padding: 20px;
-        background-color: #ffe4e1; /* Light pink background */
+        background-color:rgb(225, 225, 255); /* Light blue background */
         border-radius: 12px;
         width: calc(100% - 400px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -65,22 +65,22 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1; /* Soft pink border */
+        border: 1px solidrgb(182, 215, 255); /* Soft pink border */
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5; /* Light pink field */
-        color: #d147a3; /* Deep pink text */
+        background-color:hsl(242, 100.00%, 90.60%); /* Light blue field */
+        color:rgb(67, 86, 179); /* Deep blue text */
     }
 
     #textArea {
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1;
+        border: 1px solidrgb(182, 187, 255);
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5;
-        color: #d147a3;
+        background-color:rgb(208, 217, 255);
+        color:rgb(71, 80, 209);
         margin-top: 10px;
         resize: none;
         height: 100px;
@@ -90,17 +90,17 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     #imageUpload {
         padding: 5px;
         border-radius: 8px;
-        border: 1px solid #ffb6c1;
+        border: 1px solidrgb(182, 188, 255);
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
-        background-color: #fff0f5;
-        color: #d147a3;
+        background-color:rgb(184, 179, 255);
+        color:rgb(71, 83, 209);
     }
 
     button[type="submit"] {
         align-self: flex-start;
         padding: 10px 20px;
-        background-color: #ff69b4; /* Hot pink button */
+        background-color:rgb(105, 110, 255); /* Medium blue button */
         color: white;
         border: none;
         border-radius: 8px;
@@ -113,7 +113,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     }
 
     button[type="submit"]:hover {
-        background-color: #d147a3; /* Deeper pink on hover */
+        background-color:rgb(80, 71, 209); /* Deeper blue on hover */
     }
 
     /* Channels Container */
@@ -130,7 +130,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: calc(50% - 20px);
         min-width: 300px;
         padding: 20px;
-        background-color: #ffe4e1;
+        background-color:rgb(187, 196, 255);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         text-align: left;
@@ -140,11 +140,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     .card-title {
         font-size: 1.2em;
         font-weight: bold;
-        color: #d147a3;
+        color:rgb(71, 83, 209);
     }
 
     .card-description {
-        color: #d147a3;
+        color:rgb(71, 71, 209);
         font-size: 1em;
         margin-top: 10px;
     }
