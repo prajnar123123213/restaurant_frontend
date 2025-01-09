@@ -82,11 +82,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <div class="restaurant-row">
     <div class="restaurant-item">
-        <h4>West Lake Restaurant (西湖楼)</h4>
+        <h4>West Lake Restaurant</h4>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599679.4665856264!2d108.3245561875!3d28.228208999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34274bc5287ebbc5%3A0xbaae0193648be35d!2z6KW_5rmW5qW8!5e0!3m2!1sen!2sus!4v1734114976449!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="restaurant-item">
-        <h4>Silk Road Cuisine (丝绸之路美食)</h4>
+        <h4>Silk Road Cuisine</h4>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14454107.199510708!2d100.31973386609324!3d27.81485653954242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34274a2c4efc96b9%3A0x7a80fae9c5385bc1!2sXinjiang%20the%20Silk%20Road%20Roasted%20Mutton!5e0!3m2!1sen!2sus!4v1734115339626!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
@@ -101,7 +101,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 <div class="restaurant-row">
     <div class="restaurant-item">
 <h4 style="
-    color: #826b64 !important;"> Indian Accent (इंडियन एक्सेंट)</h4>
+    color: #826b64 !important;"> Indian Accent</h4>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57397489.5483493!2d3.4100973999999593!3d28.59183360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd309eebed77%3A0xfd133b52e7612c26!2sIndian%20Accent!5e0!3m2!1sen!2sus!4v1734115500662!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
     </div>
 </div>
