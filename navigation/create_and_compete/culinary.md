@@ -65,7 +65,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solidrgb(182, 215, 255); /* Soft pink border */
+        border: 1px solid rgb(182, 215, 255); /* Soft pink border */
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
         background-color:hsl(242, 100.00%, 90.60%); /* Light blue field */
@@ -76,7 +76,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solidrgb(182, 187, 255);
+        border: 1px solid rgb(182, 187, 255);
         font-size: 16px;
         font-family: 'Comic Sans MS', cursive;
         background-color:rgb(208, 217, 255);
@@ -90,7 +90,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     #imageUpload {
         padding: 5px;
         border-radius: 8px;
-        border: 1px solidrgb(182, 188, 255);
+        border: 1px solid rgb(182, 188, 255);
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
         background-color:rgb(184, 179, 255);

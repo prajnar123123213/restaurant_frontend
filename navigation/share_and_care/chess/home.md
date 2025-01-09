@@ -90,7 +90,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     #imageUpload {
         padding: 5px;
         border-radius: 8px;
-        border: 1px solidrgb(246, 182, 255);
+        border: 1px solid rgb(246, 182, 255);
         font-size: 14px;
         font-family: 'Comic Sans MS', cursive;
         background-color: #fff0f5;
