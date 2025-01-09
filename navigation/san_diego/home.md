@@ -14,6 +14,12 @@ menu: nav/san_diego.html
         font-size: 2.5em; /* Adjusted size for emphasis */
         margin-top: 20px;
     }
+    .smaller-text {
+        text-align: center;
+        color: #f5dc63; /* light yellow */
+        font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+        font-size: 1.5em; /* Smaller font size */
+        margin-top: 10px;
 </style>
 
 <div class="centered-text">
@@ -23,3 +29,6 @@ menu: nav/san_diego.html
 <center>
 <img src="{{site.baseurl}}/images/createandcompete/sandiego.jpg" alt= "San Diego" width="500" height="500">
 </center>
+<div class="smaller text">
+    Enjoy our wide selection of San Diego's best restaurants.
+</div>
