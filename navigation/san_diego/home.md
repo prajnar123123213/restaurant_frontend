@@ -17,9 +17,9 @@ menu: nav/san_diego.html
 </style>
 
 <div class="centered-text">
-    <h1>Welcome to Sunny San Diego! jfkelj</h1>
+    <h1>Welcome to Sunny San Diego!</h1>
 </div>
 <br>
 <center>
-<img src="{{site.baseurl}}/images/createandcompete/sandiego.jpg" alt= "San Diego" width="500" height="500">
+<img src="{{site.baseurl}}/images/sandiego.jpg" alt= "South America" width="500" height="500">
 </center>
