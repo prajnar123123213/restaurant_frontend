@@ -221,20 +221,20 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
           <th>Location</th>
       </tr>
   </thead>
-  <tbody id="result">
+  <tbody id="foodResult">
     <!-- javascript generated data -->
   </tbody>
 </table>
 
 <script>
   // prepare HTML result container for new output
-  let resultContainer = document.getElementById("result");
+  let foodResultContainer = document.getElementById("foodResult");
   
   // prepare URL
-  url = "http://127.0.0.1:8887/api/food";
+  foodUrl = "http://127.0.0.1:8887/api/food";
 
   // set options for cross origin header request
-  let options = {
+  let foodOptions = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
@@ -245,7 +245,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   };
 
   // fetch the API
-  fetch(url, options)
+  fetch(foodUrl, foodOptions)
     // response is a RESTful "promise" on any successful fetch
     .then(response => {
       // check for response errors and display
@@ -268,7 +268,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
             tr.appendChild(name);
             tr.appendChild(location);
             // add HTML to container
-            resultContainer.appendChild(tr);
+            foodResultContainer.appendChild(tr);
           }
       })
   })
@@ -343,20 +343,20 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
           <th>Location</th>
       </tr>
   </thead>
-  <tbody id="result">
+  <tbody id="mealResult">
     <!-- javascript generated data -->
   </tbody>
 </table>
 
 <script>
   // prepare HTML result container for new output
-  let resultContainer = document.getElementById("result");
+  let mealResultContainer = document.getElementById("mealResult");
   
   // prepare URL
-  url = "http://127.0.0.1:8887/api/meal";
+  mealUrl = "http://127.0.0.1:8887/api/meal";
 
   // set options for cross origin header request
-  let options = {
+  let mealOptions = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
@@ -367,7 +367,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   };
 
   // fetch the API
-  fetch(url, options)
+  fetch(mealUrl, mealOptions)
     // response is a RESTful "promise" on any successful fetch
     .then(response => {
       // check for response errors and display
@@ -390,7 +390,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
             tr.appendChild(name);
             tr.appendChild(location);
             // add HTML to container
-            resultContainer.appendChild(tr);
+            mealResultContainer.appendChild(tr);
           }
       })
   })
