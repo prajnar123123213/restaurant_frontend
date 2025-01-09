@@ -6,20 +6,16 @@ permalink: /san_diego/home
 menu: nav/san_diego.html
 ---
 
-<style>
-    .centered-text {
-        text-align: center;
-        color: #f5dc63; /* light yellow */
-        font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-        font-size: 2.5em; /* Adjusted size for emphasis */
-        margin-top: 20px;
-    }
-</style>
-
-<div class="centered-text">
-    <h1>Welcome to Sunny San Diego!</h1>
-</div>
+<h1 style="
+    color:rgb(25, 128, 192); /* reddish brown */
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 2.5em; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 20px;
+">
+    Welcome to San Diego!
+</h1>
 <br>
 <center>
-<img src="{{site.baseurl}}/images/createandcompete/sandiego.jpg" alt= "San Diego" width="500" height="500">
+<img src="{{site.baseurl}}/images/sandiego.jpg" alt= "South America" width="500" height="500">
 </center>
