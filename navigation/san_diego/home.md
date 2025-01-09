@@ -17,7 +17,7 @@ menu: nav/san_diego.html
 </style>
 
 <div class="centered-text">
-    <h1>Welcome to Sunny San Diego!</h1>
+    <h1>Welcome to Sunny San Diego! jfkelj</h1>
 </div>
 <br>
 <center>
