@@ -30,7 +30,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       .restaurant-item h4 {
           font-size: 1.5em;
           font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
-      } */
+      } 
   </style>
 
   
