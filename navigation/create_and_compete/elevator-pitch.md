@@ -165,20 +165,20 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       width: 80%;
       margin: 20px auto;
       border-collapse: collapse;
-      background-color: #8B4513; /* Brown background */
-      color: #F4E1D2; /* Light sand text color */
+      background-color:rgb(19, 95, 139); /* Brown background */
+      color:rgb(234, 210, 244); /* Light sand text color */
       font-family: "Ubuntu", sans-serif; /* African-inspired font */
       font-size: 16px;
-      border: 2px solid #5E2C04; /* Dark brown border */
+      border: 2px solidrgb(35, 31, 59); /* Dark brown border */
     }
 
     /* Table header styles */
     th {
-      background-color: #5E2C04; /* Darker brown for header */
+      background-color:rgb(111, 132, 202); /* Darker brown for header */
       color: #F4E1D2; /* Light text */
       padding: 10px;
       text-align: center;
-      border: 2px solid #8B4513;
+      border: 2px solidrgb(19, 117, 139);
     }
 
     /* Table body styles */
@@ -190,23 +190,23 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     /* Zebra stripes effect */
     tr:nth-child(even) {
-      background-color: #A0522D; /* Medium brown for even rows */
+      background-color:rgb(176, 33, 76); /* Medium brown for even rows */
     }
 
     tr:nth-child(odd) {
-      background-color: #8B4513; /* Base brown for odd rows */
+      background-color:rgb(37, 67, 69); /* Base brown for odd rows */
     }
 
     /* Hover effect */
     tr:hover {
-      background-color: #D2B48C; /* Sand color */
-      color: #5E2C04; /* Dark brown text */
+      background-color:rgb(55, 42, 100); /* Sand color */
+      color:rgb(45, 103, 83); /* Dark brown text */
     }
 </style>
 
 <center>
 <h1 style="
-    color: #d2b48c; /* Light brown (Tan) */
+    color:rgb(207, 138, 175); /* Light brown (Tan) */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 3.5em; /* Adjusted size for emphasis */
 ">
@@ -328,7 +328,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <center>
 <h1 style="
-    color: #d2b48c; /* Light brown (Tan) */
+    color:rgb(99, 168, 208); /* Light brown (Tan) */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 3.5em; /* Adjusted size for emphasis */
 ">
