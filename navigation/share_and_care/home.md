@@ -9,13 +9,28 @@ menu: nav/share_and_care.html
 <html>
 <head>
 <style>
+body {
+  background: linear-gradient(to bottom, #A685E2, #3D0075);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
 .myDiv {
-  border: 5px white;
-  background-color: rgb(196, 143, 215);
+  border: 5px solid white;
+  background: linear-gradient(to bottom right, #D8B4F8, #A85CF9); /* Gradient background for a modern look */
   text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 30px;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
   animation: fadeIn 1.5s ease-in-out;
+  max-width: 80%;
+  margin: 40px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+.myDiv:hover {
+  transform: scale(1.03); /* Slightly enlarges the box on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* More pronounced shadow effect */
 }
 img {
   border: 5px solid rgb(234, 181, 236);
@@ -65,7 +80,7 @@ img:hover {
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 2.5em; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
-    margin-top: 20px;">Welcome to Asia!</h2>
+    margin-top: 20px;">Welcome to Asia!!</h2>
   <p style="
     color: #FCDBFF;
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
