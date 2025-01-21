@@ -15,7 +15,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
           padding: 20px;
       }
   
-     /* .restaurant-item {
+      .restaurant-item {
           width: 48%; 
           text-align: center;
       }
@@ -29,21 +29,15 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   
       .restaurant-item h4 {
           font-size: 1.5em;
-          font-weight: bold;
-          color:rgb(192, 75, 25);
-      } */
+          font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+      } 
   </style>
-  
-  <h4>
-    <a href="https://prajnar123123213.github.io/restaurant_frontend/rate_and_relate/instabox" class="restaurant-link">
-        Tell us your thoughts!
-    </a>
-  </h4>
+
   
   <h1 style="
-      color:rgb(26, 151, 32); /* Reddish brown */
+      color: #1a9720; /* Light green */
       font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-      font-size: 3.5em; /* Adjusted size for emphasis */
+      font-size: 2em; /* Adjusted size for emphasis */
       ">
       Brazil
   </h1>
@@ -51,9 +45,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   <div class="restaurant-row">
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(26, 151, 32); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #1a9720;  
             ">
             Churrascaria Palace
           </h4>
@@ -61,9 +53,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       </div>
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(26, 151, 32); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #1a9720; 
             ">
             Fogo de Chão
           </h4>
@@ -72,18 +62,16 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   </div><br>
 
 <h1 style="
-      color:rgb(147, 172, 63); /* light green */
+      color: #93ac3f; /* lighter green */
       font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-      font-size: 3.5em; /* Adjusted size for emphasis */
+      font-size: 2em; /* Adjusted size for emphasis */
       ">
     Peru  
   </h1>
   <div class="restaurant-row">
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(147, 172, 63); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #93ac3f; 
             ">
             Saha Peruvian Kitchen
           </h4>
@@ -91,9 +79,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       </div>
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(147, 172, 63); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #93ac3f;
             ">
             Resto - Bar "SABOR PERÚ"
           </h4>
@@ -102,9 +88,9 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   </div><br>  
   
  <h1 style="
-      color:rgb(139, 179, 208); /* Light blue */
+      color: #8bb3d0; /* Light blue */
       font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-      font-size: 3.5em; /* Adjusted size for emphasis */
+      font-size: 2em; /* Adjusted size for emphasis */
       ">
      Argentina 
   </h1>
@@ -112,9 +98,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   <div class="restaurant-row">
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(139, 179, 208); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #8bb3d0; 
             ">
             The Argentinian Experience
           </h4>
@@ -122,9 +106,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       </div>
       <div class="restaurant-item">
           <h4 style="
-            color: rgb(139, 179, 208); 
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; 
-            font-size: 3.5em; 
+            color: #8bb3d0; 
             ">
             Mercado de Liniers Restaurante
           </h4>
@@ -133,9 +115,9 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   </div><br>
 
 <h1 style="
-      color:rgb(255, 0, 0); /* Red */
+      color: #ff0000; /* Red */
       font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-      font-size: 3.5em; /* Adjusted size for emphasis */
+      font-size: 2em; /* Adjusted size for emphasis */
       ">
      Chile 
   </h1>
@@ -143,9 +125,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   <div class="restaurant-row">
       <div class="restaurant-item">
           <h4 style="
-            color:rgb(255, 0, 0); /* Red */
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-            font-size: 3.5em; /* Adjusted size for emphasis */
+            color:#ff0000; /* Red */
             ">
             Jardin Oriental
           </h4>
@@ -153,9 +133,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       </div>
       <div class="restaurant-item">
           <h4 style="
-            color:rgb(255, 0, 0); /* Red */
-            font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-            font-size: 3.5em; /* Adjusted size for emphasis */
+            color:#ff0000; /* Red */
             ">
             Sabor Calderino
           </h4>

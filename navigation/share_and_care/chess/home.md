@@ -281,7 +281,7 @@ h1 {
 
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 13;
+        const group_id = 21;
 
         const channelData = {
             name: title,
