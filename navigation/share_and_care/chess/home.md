@@ -27,7 +27,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
                 <button type="submit">Post</button>
             </form>
         </div>
-        <div id="culinaryposts"></div>
+        <div id="japan"></div>
     <div>
 </div>
 
@@ -117,7 +117,7 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
     }
 
     /* Channels Container */
-    #culinaryposts {
+    #japan {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -221,7 +221,7 @@ h1 {
 
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
-    const container = document.getElementById("culinaryposts");
+    const container = document.getElementById("japan");
 
     async function fetchUser() {
         const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
@@ -234,7 +234,7 @@ h1 {
 
     async function fetchChannels() {
         try {
-            const groupName = 'Culinary Posts';
+            const groupName = 'Japan';
             const responseData = {
                 group_name: groupName,
             };
@@ -281,7 +281,7 @@ h1 {
 
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 13;
+        const group_id = 21;
 
         const channelData = {
             name: title,
