@@ -14,48 +14,48 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       width: 80%;
       margin: 20px auto;
       border-collapse: collapse;
-      background-color: #8B4513; /* Brown background */
+      background-color:rgb(115, 110, 215); /* Brown background */
       color: #F4E1D2; /* Light sand text color */
       font-family: "Ubuntu", sans-serif; /* African-inspired font */
       font-size: 16px;
-      border: 2px solid #5E2C04; /* Dark brown border */
+      border: 2px solidrgb(95, 115, 203); /* Dark brown border */
     }
 
     /* Table header styles */
     th {
-      background-color: #5E2C04; /* Darker brown for header */
+      background-color:rgb(181, 80, 116); /* Darker brown for header */
       color: #F4E1D2; /* Light text */
       padding: 10px;
       text-align: center;
-      border: 2px solid #8B4513;
+      border: 2px solidrgb(179, 65, 70);
     }
 
     /* Table body styles */
     td {
       padding: 10px;
       text-align: center;
-      border: 1px solid #5E2C04; /* Border for table cells */
+      border: 1px solidrgb(118, 112, 198); /* Border for table cells */
     }
 
     /* Zebra stripes effect */
     tr:nth-child(even) {
-      background-color: #A0522D; /* Medium brown for even rows */
+      background-color:rgb(212, 154, 231); /* Medium brown for even rows */
     }
 
     tr:nth-child(odd) {
-      background-color: #8B4513; /* Base brown for odd rows */
+      background-color:rgb(19, 79, 139); /* Base brown for odd rows */
     }
 
     /* Hover effect */
     tr:hover {
-      background-color: #D2B48C; /* Sand color */
-      color: #5E2C04; /* Dark brown text */
+      background-color:rgb(140, 173, 210); /* Sand color */
+      color:rgb(167, 187, 183); /* Dark brown text */
     }
 </style>
 
 <center>
 <h1 style="
-    color: #d2b48c; /* Light brown (Tan) */
+    color:rgb(140, 148, 210); /* Light brown (Tan) */
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 3.5em; /* Adjusted size for emphasis */
 ">
