@@ -17,7 +17,7 @@ body {
 }
 .myDiv {
   border: 5px solid white;
-  background: linear-gradient(to bottom right, #D8B4F8, #A85CF9); /* Gradient background for a modern look */
+  background: linear-gradient(to bottom right,rgb(248, 180, 210),rgb(146, 67, 114)); /* Gradient background for a modern look */
   text-align: center;
   padding: 30px;
   border-radius: 15px; /* Rounded corners for a softer look */
@@ -74,6 +74,7 @@ img:hover {
 <body>
 
 </center>
+
 This is a continent of diversity, beauty, culture, and more importantly, delicious food!
 
 <img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
@@ -83,5 +84,6 @@ Click below to start exploring different restaurants before writing a review!
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
     onmouseout="this.style.backgroundColor='#d2b48c'; this.style.transform='scale(1)';">Explore</button>
-    </center>
+
+</center>
 
