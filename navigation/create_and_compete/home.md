@@ -8,6 +8,7 @@ menu: nav/create_and_compete.html
 <html>
 <head>
 <style>
+</center>
 body {
   background: linear-gradient(to bottom, #A685E2, #3D0075);
   background-attachment: fixed;
@@ -79,7 +80,6 @@ This is a continent of diversity, beauty, culture, and more importantly, delicio
 <img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
 
 Click below to start exploring different restaurants before writing a review! 
-</center>
 
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
