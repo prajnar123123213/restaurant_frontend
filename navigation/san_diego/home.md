@@ -23,3 +23,5 @@ menu: nav/san_diego.html
 <center>
 <img src="{{site.baseurl}}/images/sandiego.jpg" alt= "South America" width="500" height="500">
 </center>
+
+<link rel="stylesheet" href="styles.css">
