@@ -9,7 +9,7 @@ menu: nav/create_and_compete.html
 <head>
 <style>
 body {
-  background: linear-gradient(to bottom, #A685E2, #3D0075);
+  background: linear-gradient(to bottom,rgb(226, 133, 207),rgb(117, 0, 62));
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -73,8 +73,6 @@ img:hover {
 </head>
 <body>
 
-</center>
-
 This is a continent of diversity, beauty, culture, and more importantly, delicious food!
 
 <img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
@@ -84,6 +82,3 @@ Click below to start exploring different restaurants before writing a review!
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
     onmouseout="this.style.backgroundColor='#d2b48c'; this.style.transform='scale(1)';">Explore</button>
-
-</center>
-
