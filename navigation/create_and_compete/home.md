@@ -8,7 +8,6 @@ menu: nav/create_and_compete.html
 <html>
 <head>
 <style>
-</center>
 body {
   background: linear-gradient(to bottom, #A685E2, #3D0075);
   background-attachment: fixed;
