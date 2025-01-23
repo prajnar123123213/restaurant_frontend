@@ -108,24 +108,22 @@ permalink: /undgdmusic/
         };
         const unsplashAccessKey = "YOUR_UNSPLASH_API_KEY"; // Replace with your Unsplash API key.
         // Function to get a random recipe and image
-        async function getRecipe() {
-            const country = document.getElementById("country").value;
-            const dishes = recipes[country];
-            const randomDish = dishes[Math.floor(Math.random() * dishes.length)];
-            // Fetch image from Unsplash
-            let imageUrl = "";
-            try {
-                const response = await fetch(`https://api.unsplash.com/photos/random?query=${encodeURIComponent(randomDish)}&client_id=${unsplashAccessKey}`);
-                const data = await response.json();
-                imageUrl = data.urls.small || "https://via.placeholder.com/400x300?text=No+Image";
-            } catch {
-                imageUrl = "https://via.placeholder.com/400x300?text=Image+Not+Available";
-            }
-            document.getElementById("output").innerHTML = `
-                <h2>${randomDish} (from ${country})</h2>
-                <img src="${imageUrl}" alt="${randomDish}" class="food-image">
-            `;
-        }
+async function getRecipe() {
+    const country = document.getElementById("country").value;
+    const type = document.getElementById("type").value;
+    // Fetch recipes from your own API
+    const response = await fetch('/recipes');
+    const recipes = await response.json();
+    // Filter recipes by country and type
+    const filteredRecipes = recipes.filter(recipe => recipe.country === country && recipe.type === type);
+    // Select a random recipe
+    if (filteredRecipes.length > 0) {
+        const randomRecipe = filteredRecipes[Math.floor(Math.random() * filteredRecipes.length)];
+        document.getElementById("recipeOutput").innerHTML = `<h3>Random Recipe from ${country} (${type}):</h3><p>${randomRecipe.title}</p>`;
+    } else {
+        document.getElementById("recipeOutput").innerHTML = `<h3>No recipes found for ${country} (${type})!</h3>`;
+    }
+}
         // Simple Chat Functionality
         function sendMessage() {
             const input = document.getElementById("chatInput");
@@ -139,7 +137,7 @@ permalink: /undgdmusic/
                 chatBox.scrollTop = chatBox.scrollHeight;
             }
         }
-    </script>
+ </script>
 
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
