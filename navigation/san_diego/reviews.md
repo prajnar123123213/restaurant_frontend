@@ -25,14 +25,41 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
                     <label for="imageUpload" style="margin-right: 10px; color: pink; font-family: 'Comic Sans MS', cursive;">Upload an image:</label>
                     <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
                 </div>
-                <button type="submit">Post</button>
+                <button type="submit" id="postButton">Post</button>
             </form>
         </div>
-        <div id="culinaryposts"></div>
+        <div id="culinaryposts" class="form-container">
+            <table id="channelsTable" border="1">
+                <thead>
+                <tr>
+                    <th>Restaurant Name</th>
+                    <th>Review</th>
+                </tr>
+                </thead>
+                <tbody id="channelsTableBody">
+                </tbody>
+        </table>
+        </div>
     <div>
 </div>
 
 <style>
+    #channelsTable {
+        width: 80%; 
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    #channelsTable th, #channelsTable td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid;
+    }
+
+    #channelsTable th {
+        font-weight: bold;
+    }
+
     .main {
         display: flex;
     }
@@ -47,6 +74,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     /* Form Styling */
     .form-container {
         padding: 20px;
+        margin-top: 30px;
         background-color:rgb(255, 178, 196); /* Light pink background */
         border-radius: 12px;
         width: calc(100% - 400px);
@@ -128,6 +156,8 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     /* Post Cards Styling */
     .card {
         width: calc(50% - 20px);
+        padding-top: 20px;
+        padding-bottom: 30px;
         min-width: 300px;
         padding: 20px;
         background-color:rgb(249, 186, 206);
@@ -150,7 +180,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     }
 </style>
 
-<script type="module">
+<!-- <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
     const container = document.getElementById("culinaryposts");
 
@@ -205,24 +235,88 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         } catch (error) {
             console.error('Error fetching channels:', error);
         }
+    } -->
+
+<script>
+    
+    // Define the API URL
+    const apiUrl = 'http://127.0.0.1:8887/api/channel/getdata'; // Update with your correct API URL
+
+    // Function to handle form submission and fetching of channels
+    async function handlePostAndFetchChannels() {
+        //event.preventDefault();
+
+        console.log("running fetch")
+
+        const title = document.getElementById('title').value;
+        const content = document.getElementById('textArea').value;
+
+
+        try {
+
+            const response = await fetch(apiUrl, {
+                method: 'GET',
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to add channel: ' + response.statusText);
+            }
+
+            //fetchChannels();
+
+            const data = await response.json(); // Parse the JSON response
+            const channels = data.channels; // Assuming the array is under "channels"
+
+        // Populate the table with the fetched channels
+            const tableBody = document.getElementById('channelsTableBody');
+            if (!tableBody) {
+                console.error('Element with id "channelsTableBody" not found.');
+                return;
+            }
+
+            tableBody.innerHTML = ''; // Clear the table before adding new rows
+
+            channels.forEach((channel) => {
+            const row = document.createElement('tr');
+
+            // Extract and display title and content
+            const nameCell = document.createElement('td');
+            nameCell.textContent = channel.title || "N/A";
+
+            const reviewCell = document.createElement('td');
+            reviewCell.textContent = channel.content?.content || "No review provided";
+
+            row.appendChild(nameCell);
+            row.appendChild(reviewCell);
+
+            tableBody.appendChild(row);
+        });
+
+            document.getElementById('channelForm').reset();
+        } catch (error) {
+            console.error('Error adding channel:', error);
+            alert('Error adding channel: ' + error.message);
+        }
     }
 
     document.getElementById('channelForm').addEventListener('submit', async function(event) {
         event.preventDefault();
 
+        console.log("button hit")
+
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 13;
 
         const channelData = {
             name: title,
-            group_id: group_id,
             attributes: {"content": content}
         };
 
         try {
-            const response = await fetch(`${pythonURI}/api/channel`, {
-                ...fetchOptions,
+            //const response = await fetch(`${pythonURI}/api/channel`, {
+            console.log("posting")
+
+            const response = await fetch(`http://127.0.0.1:8887/api/channel`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -234,15 +328,17 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
                 throw new Error('Failed to add channel: ' + response.statusText);
             }
 
-            fetchChannels();
+            //fetchChannels();
             document.getElementById('channelForm').reset();
         } catch (error) {
             console.error('Error adding channel:', error);
             alert('Error adding channel: ' + error.message);
         }
+
+        handlePostAndFetchChannels();
     });
 
-    fetchChannels();
+    // fetchChannels();
 </script>
 
 <script>
