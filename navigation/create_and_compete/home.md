@@ -73,12 +73,24 @@ img:hover {
 </head>
 <body>
 
-This is a continent of diversity, beauty, culture, and more importantly, delicious food!
+<div class="myDiv">
+  <h2 style="
+    color: white;
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 2.5em; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 20px;">Welcome to Africa!</h2>
+  <p style="
+    color: #FCDBFF;
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
+    font-size: 25px; /* Adjusted size for emphasis */
+    text-align: center; /* Centered text */
+    margin-top: 10px;">Explore a vast and diverse continent with a rich history, vibrant culture, and stunning landscapes. From the dynamic urban centers of Nigeria to the scenic landscapes of Morocco, discover some of the restaurants and cuisines in Africa!</p>
+</div>
 
-<img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
-
-Click below to start exploring different restaurants before writing a review! 
-
+<center>
+  <img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
+</center>
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
-    onmouseout="this.style.backgroundColor='#d2b48c'; this.style.transform='scale(1)';">Explore</button>
+    onmouseout="this.style.backgroundColor='#d2b48c'; this.style.transform='scale(1)';">Explore Africa!</button>
