@@ -72,73 +72,42 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
             <!-- Recipe output will be displayed here -->
         </div>
     </div>
-    <script>
-        const recipes = {
-            "Nigeria": {
-                "sweet": [
-                    "Chin Chin - Fried dough snack.",
-                    "Nigerian Coconut Rice Pudding."
-                ],
-                "savory": [
-                    "Jollof Rice - A popular rice dish.",
-                    "Egusi Soup - Melon seed soup with meat."
-                ]
-            },
-            "South Africa": {
-                "sweet": [
-                    "Malva Pudding - A traditional dessert.",
-                    "Milk Tart - A South African custard tart."
-                ],
-                "savory": [
-                    "Bobotie - A spiced minced meat dish.",
-                    "Bunny Chow - Curry in a hollowed-out loaf of bread."
-                ]
-            },
-            "Ethiopia": {
-                "sweet": [
-                    "Baklava - A sweet pastry with nuts and syrup.",
-                    "Dabo Kolo - Sweet and spicy fried dough balls."
-                ],
-                "savory": [
-                    "Doro Wat - Spicy chicken stew.",
-                    "Kitfo - Minced raw beef with spices."
-                ]
-            },
-            "Kenya": {
-                "sweet": [
-                    "Mandazi - Fried dough pastry.",
-                    "Kenyan Coconut Cake."
-                ],
-                "savory": [
-                    "Ugali - Maize meal served with stew.",
-                    "Nyama Choma - Grilled meat."
-                ]
-            },
-            "Ghana": {
-                "sweet": [
-                    "Chibom - Sweet bread rolls.",
-                    "Ghanaian Rice Balls with Groundnut Soup."
-                ],
-                "savory": [
-                    "Fufu and Light Soup - A staple dish.",
-                    "Ghanaian Jollof Rice."
-                ]
-            }
-        };
-        function getRecipe() {
+ <script>
+        const API_KEY = 'e956342f5c504b1685b5f81826a61c9b'; // Replace with your Spoonacular API key
+        const BASE_URL = 'https://api.spoonacular.com/recipes/complexSearch';
+        async function getRecipe() {
             const country = document.getElementById("country").value;
             const type = document.getElementById("type").value;
-            // Fetch a random recipe from the selected country and type (sweet/savory)
-            const countryRecipes = recipes[country][type];
-            const randomRecipe = countryRecipes[Math.floor(Math.random() * countryRecipes.length)];
-            // Display the recipe
-            const output = document.getElementById("recipeOutput");
-            output.innerHTML = `<h3>Random Recipe from ${country} (${type}):</h3><p>${randomRecipe}</p>`;
+            // Map country and type to search parameters
+            const cuisine = country; // Assuming Spoonacular supports cuisine as country name
+            const query = type === 'sweet' ? 'dessert' : 'main course'; // Map 'sweet' to desserts and 'savory' to main courses
+            // Build the API URL
+            const url = `${BASE_URL}?apiKey=${API_KEY}&cuisine=${encodeURIComponent(cuisine)}&type=${encodeURIComponent(query)}&number=5`;
+            try {
+                // Fetch recipes from the API
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status} - ${response.statusText}`);
+                }
+                const data = await response.json();
+                // Get a random recipe from the results
+                const recipes = data.results;
+                if (recipes.length === 0) {
+                    throw new Error('No recipes found for the selected country and type.');
+                }
+                const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
+                // Display the recipe
+                const output = document.getElementById("recipeOutput");
+                output.innerHTML = `
+                    <h3>Random Recipe from ${country} (${type}):</h3>
+                    <p><strong>${randomRecipe.title}</strong></p>
+                    <img src="${randomRecipe.image}" alt="${randomRecipe.title}" style="max-width: 100%; height: auto;" />
+                `;
+            } catch (error) {
+                // Display error message
+                const output = document.getElementById("recipeOutput");
+                output.innerHTML = `<p style="color: red;">${error.message}</p>`;
+            }
         }
-    </script>
-
-</body>
-
-**NEED TO CONNECT TO AN API DATABASE OF AFRICAN RECIPIES
-
+</script>
 
