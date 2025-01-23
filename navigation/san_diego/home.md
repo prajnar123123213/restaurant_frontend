@@ -78,12 +78,19 @@ img:hover {
 
 
 <style>
+    body {
+        background: linear-gradient(to bottom,rgb(133, 145, 255),rgb(52, 60, 177)) !important; /* Orange to Yellow gradient */
+        background-attachment: fixed !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     .centered-text {
         text-align: center;
-        color: #f5dc63; /* light yellow */
-        font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-        font-size: 2.5em; /* Adjusted size for emphasis */
-        margin-top: 20px;
+        color:rgb(255, 255, 255) !important; /* Light yellow text */
+        font-family: 'Comic Sans MS', 'Brush Script MT', cursive !important; /* Fun and playful font */
+        font-size: 2.5em !important; /* Adjusted size for emphasis */
+        margin-top: 20px !important;
     }
 </style>
 
@@ -92,7 +99,7 @@ img:hover {
 </div>
 <br>
 <center>
-<img src="{{site.baseurl}}/images/sandiego.jpg" alt= "South America" width="500" height="500">
+    <img src="{{site.baseurl}}/images/sandiego.jpg" alt="San Diego" width="500" height="500">
 </center>
 
 <link rel="stylesheet" href="styles.css">
