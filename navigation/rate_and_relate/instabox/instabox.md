@@ -28,7 +28,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
                 <button type="submit">Post</button>
             </form>
         </div>
-        <div id="instabox"></div>
+        <div id="sandiego"></div>
     <div>
 </div>
 
@@ -118,7 +118,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     }
 
     /* Channels Container */
-    #instabox {
+    #sandiego {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -153,7 +153,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
-    const container = document.getElementById("instabox");
+    const container = document.getElementById("sandiego");
 
     async function fetchUser() {
         const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
@@ -166,7 +166,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     async function fetchChannels() {
         try {
-            const groupName = 'Instabox';
+            const groupName = 'Sandiego';
             const responseData = {
                 group_name: groupName,
             };
@@ -213,7 +213,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 28;
+        const group_id = 35;
 
         const channelData = {
             name: title,
