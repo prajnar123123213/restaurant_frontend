@@ -74,18 +74,11 @@ img:hover {
 </head>
 <body>
 <div class="myDiv">
-  <h2 style="
-    color: white;
-    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 2.5em; /* Adjusted size for emphasis */
-    text-align: center; /* Centered text */
-    margin-top: 20px;">Welcome to Asia!!</h2>
-  <p style="
     color: #FFDAB9;
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
-    margin-top: 10px;">Explore a vast diverse continent with a rich history, vibrant culture, and breathtaking landscapes. From the bright cities of China to the bustling streets of India, explore some of the restaurants and cuisines in Asia!</p>
+    margin-top: 10px;">Explore South America with its festive food and delightful cusine!</p>
 </div>
 <center>
   <img src="{{site.baseurl}}/images/createandcompete/china.jpeg" alt="China" width="500" height="500">

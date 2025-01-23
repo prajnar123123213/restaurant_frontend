@@ -74,13 +74,6 @@ img:hover {
 </style>
 </head>
 <body>
-<div class="myDiv">
-  <h2 style="
-    color: white;
-    font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-    font-size: 2.5em; /* Adjusted size for emphasis */
-    text-align: center; /* Centered text */
-    margin-top: 20px;">Welcome to Asia!!</h
 
 
 
