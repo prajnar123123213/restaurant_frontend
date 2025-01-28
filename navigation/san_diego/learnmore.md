@@ -14,53 +14,74 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #a69c6c;
-            color: #96a66c;
+            background-color: #ffe4e1; /* Very light pink */
+            color: #880e4f; /* Deep magenta for text */
             margin: 20px;
         }
         h1 {
-            color: #2c3e50;
+            color: #d81b60; /* Vibrant pink for the header */
+            font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+            font-size: 3.5em;
+            text-align: center;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #a69c6c;
+            background-color: #ffebee; /* Soft pink for the container */
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         select, button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 2px solid #f48fb1; /* Strong pink border */
+            border-radius: 6px;
+        }
+        select {
+            background-color: #fce4ec; /* Very light pink dropdown */
+            color: #880e4f; /* Deep magenta for dropdown text */
+        }
+        button {
+            background-color: #d81b60; /* Vibrant pink button */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ad1457; /* Darker pink on hover */
         }
         .restaurant-output {
             margin-top: 20px;
             padding: 20px;
-            background-color: #96a66c;
+            background-color: #ffe4e1; /* Very light pink output section */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #880e4f; /* Deep magenta text */
+        }
+        img {
+            border-radius: 8px;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1 style="
-        color: #d2b48c; /* Light brown (Tan) */
-        font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
-        font-size: 3.5em; /* Adjusted size for emphasis */
-    ">San Diego Restaurant Finder</h1>
+    <h1>San Diego Restaurant Finder</h1>
     <div class="container">
         <form id="restaurantForm">
-            <label for="type">What type of food do you like?</label>
-            <select id="type">
-                <option value="Mexican">Mexican</option>
-                <option value="Italian">Italian</option>
-                <option value="Japanese">Japanese</option>
-                <option value="American">American</option>
-                <option value="Indian">Indian</option>
+            <label for="foodType">Choose a Type of Food:</label>
+            <select id="foodType">
+                <option value="Pizza">Pizza</option>
+                <option value="Taco">Taco</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Curry">Curry</option>
+                <option value="Noodles">Noodles</option>
             </select>
             <button type="button" onclick="getRestaurant()">Find a Restaurant</button>
         </form>
@@ -69,42 +90,37 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         </div>
     </div>
     <script>
-        const restaurants = {
-            "Mexican": [
-                "Lucha Libre Taco Shop - Known for its creative tacos.",
-                "Humberto's Taco Shop - Great for classic Mexican dishes.",
-                "Puesto - Famous for artisan tacos and margaritas."
-            ],
-            "Italian": [
-                "Buona Forchetta - Renowned for its authentic Italian pizzas.",
-                "Civico 1845 - A modern take on classic Italian cuisine.",
-                "Filippi's Pizza Grotto - A local favorite for pizza and pasta."
-            ],
-            "Japanese": [
-                "Nobu San Diego - High-end sushi and Japanese dishes.",
-                "Sushi Ota - A sushi lover's paradise.",
-                "Tajima Ramen - Known for its delicious ramen bowls."
-            ],
-            "American": [
-                "Hash House A Go Go - Famous for its oversized portions.",
-                "Phil's BBQ - A must-visit for barbecue lovers.",
-                "The Mission - A great spot for classic American brunch."
-            ],
-            "Indian": [
-                "Curryosity - Modern twists on Indian classics.",
-                "Ashoka The Great - Traditional Indian dishes in a cozy setting.",
-                "Punjabi Tandoor - Authentic Indian food with bold flavors."
-            ]
-        };
-        function getRestaurant() {
-            const type = document.getElementById("type").value;
-            // Fetch a random restaurant based on the selected type
-            const typeRestaurants = restaurants[type];
-            const randomRestaurant = typeRestaurants[Math.floor(Math.random() * typeRestaurants.length)];
-            // Display the restaurant
-            const output = document.getElementById("restaurantOutput");
-            output.innerHTML = `<h3>Recommended ${type} Restaurant in San Diego:</h3><p>${randomRestaurant}</p>`;
+        const API_KEY = 'e956342f5c504b1685b5f81826a61c9b'; // Replace with your Spoonacular API key
+        const BASE_URL = 'https://api.spoonacular.com/food/menuItems/search'; // Provided API base URL
+        async function getRestaurant() {
+            const foodType = document.getElementById("foodType").value;
+            // Build the API URL
+            const url = `${BASE_URL}?apiKey=${API_KEY}&query=${encodeURIComponent(foodType)}&number=5`;
+            try {
+                // Fetch restaurants from the API
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status} - ${response.statusText}`);
+                }
+                const data = await response.json();
+                // Get a random restaurant from the results
+                const restaurants = data.menuItems;
+                if (restaurants.length === 0) {
+                    throw new Error('No restaurants found for the selected food type.');
+                }
+                const randomRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
+                // Display the restaurant
+                const output = document.getElementById("restaurantOutput");
+                output.innerHTML = `
+                    <h3>Recommended ${foodType} Restaurant:</h3>
+                    <p><strong>${randomRestaurant.title}</strong></p>
+                    <img src="${randomRestaurant.image}" alt="${randomRestaurant.title}" />
+                `;
+            } catch (error) {
+                // Display error message
+                const output = document.getElementById("restaurantOutput");
+                output.innerHTML = `<p style="color: red;">${error.message}</p>`;
+            }
         }
     </script>
 </body>
-
