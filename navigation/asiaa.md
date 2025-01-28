@@ -97,6 +97,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis *">Restaurant to Visit:
 
+
 <table id="demo" class="table">
   <thead>
       <tr>
