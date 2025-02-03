@@ -73,19 +73,21 @@ img:hover {
 </head>
 <body>
 
-<div class="myDiv">
-  <h2 style="
+<div class="myDiv" id="post-container">
+  <h2 id="post-title" style="
     color: white;
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 2.5em; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
     margin-top: 20px;">Welcome to Africa!</h2>
-  <p style="
+  <p id="post-content" style="
     color: #FCDBFF;
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
     margin-top: 10px;">Explore a vast and diverse continent with a rich history, vibrant culture, and stunning landscapes. From the dynamic urban centers of Nigeria to the scenic landscapes of Morocco, discover some of the restaurants and cuisines in Africa!</p>
+  <button id="edit-post-button" class="button">Edit Post</button>
+  <button id="delete-post-button" class="button">Delete Post</button>
 </div>
 
 <center>
@@ -94,3 +96,70 @@ img:hover {
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
     onmouseout="this.style.backgroundColor='#d2b48c'; this.style.transform='scale(1)';">Explore Africa!</button>
+
+<div id="comments-section">
+  <h3>Comments</h3>
+  <ul id="comments-list">
+    <!-- Comments will be dynamically inserted here -->
+  </ul>
+  <form id="comment-form">
+    <input type="text" id="comment-input" placeholder="Add a comment" required>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+
+<script>
+document.getElementById('comment-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const commentInput = document.getElementById('comment-input');
+  const commentText = commentInput.value.trim();
+  if (commentText) {
+    addComment(commentText);
+    commentInput.value = '';
+  }
+});
+
+function addComment(text) {
+  const commentList = document.getElementById('comments-list');
+  const commentItem = document.createElement('li');
+  commentItem.innerHTML = \`
+    <span class="comment-text">\${text}</span>
+    <button class="edit-button">Edit</button>
+    <button class="delete-button">Delete</button>
+  \`;
+  commentList.appendChild(commentItem);
+
+  commentItem.querySelector('.delete-button').addEventListener('click', function() {
+    commentList.removeChild(commentItem);
+  });
+
+  commentItem.querySelector('.edit-button').addEventListener('click', function() {
+    const newText = prompt('Edit your comment:', text);
+    if (newText) {
+      commentItem.querySelector('.comment-text').textContent = newText;
+    }
+  });
+}
+
+document.getElementById('edit-post-button').addEventListener('click', function() {
+  const postTitle = document.getElementById('post-title');
+  const postContent = document.getElementById('post-content');
+  const newTitle = prompt('Edit the title:', postTitle.textContent);
+  const newContent = prompt('Edit the content:', postContent.textContent);
+  if (newTitle) {
+    postTitle.textContent = newTitle;
+  }
+  if (newContent) {
+    postContent.textContent = newContent;
+  }
+});
+
+document.getElementById('delete-post-button').addEventListener('click', function() {
+  if (confirm('Are you sure you want to delete this post?')) {
+    document.getElementById('post-container').remove();
+  }
+});
+</script>
+
+</body>
+</html>

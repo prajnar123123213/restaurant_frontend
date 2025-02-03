@@ -1,18 +1,18 @@
 export var pythonURI;
 if (location.hostname === "localhost") {
-        pythonURI = "http://localhost:8887";
+        pythonURI = "http://localhost:8277";
 } else if (location.hostname === "127.0.0.1") {
         pythonURI = "http://127.0.0.1:8887";
 } else {
-        pythonURI =  "https://flocker.nighthawkcodingsociety.com";
+        pythonURI =  "https://flocker.restaurant.com";
 }
 export var javaURI;
 if (location.hostname === "localhost") {
-        javaURI = "http://localhost:8885";
+        javaURI = "http://localhost:8277";
 } else if (location.hostname === "127.0.0.1") {
-        javaURI = "http://127.0.0.1:8885"; //rey
+        javaURI = "http://127.0.0.1:8277"; //rey
 } else {
-        javaURI = "https://flocker-j.nighthawkcodingsociety.com";
+        javaURI = "https://flocker-j.restaurant.com";
 }
 
 export const fetchOptions = {
