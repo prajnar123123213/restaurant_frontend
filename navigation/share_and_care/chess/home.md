@@ -28,6 +28,22 @@ authors: Mirabelle, Arshia, Prajna, Zoe, Claire, Sanya
                 </div>
                 <button type="submit">Post</button>
             </form>
+            <!-- Added update and delete forms -->
+            <form id="updateForm">
+                <div class="form-inputs">
+                    <input type="text" id="updateTitle" name="updateTitle" placeholder="Update Restaurant Name" required>
+                </div>
+                <div class="form-inputs">
+                    <textarea id="updateTextArea" name="updateTextArea" placeholder="Update Post Here" required></textarea>
+                </div>
+                <button type="submit">Update</button>
+            </form>
+            <form id="deleteForm">
+                <div class="form-inputs">
+                    <input type="text" id="deleteTitle" name="deleteTitle" placeholder="Delete Restaurant Name" required>
+                </div>
+                <button type="submit">Delete</button>
+            </form>
         </div>
         <div id="japan"></div>
     <div>
@@ -311,6 +327,65 @@ h1 {
             console.error('Error adding channel:', error);
             alert('Error adding channel: ' + error.message);
         }
+    });
+
+    async function updateChannel(title, content) {
+        const channelData = {
+            name: title,
+            attributes: {"content": content}
+        };
+        try {
+            const response = await fetch(`${pythonURI}/api/channel`, {
+                ...fetchOptions,
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(channelData)
+            });
+            if (!response.ok) {
+                throw new Error('Failed to update channel: ' + response.statusText);
+            }
+            fetchChannels();
+        } catch (error) {
+            console.error('Error updating channel:', error);
+            alert('Error updating channel: ' + error.message);
+        }
+    }
+
+    async function deleteChannel(title) {
+        try {
+            const response = await fetch(`${pythonURI}/api/channel`, {
+                ...fetchOptions,
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name: title })
+            });
+            if (!response.ok) {
+                throw new Error('Failed to delete channel: ' + response.statusText);
+            }
+            fetchChannels();
+        } catch (error) {
+            console.error('Error deleting channel:', error);
+            alert('Error deleting channel: ' + error.message);
+        }
+    }
+
+    document.getElementById('updateForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const title = document.getElementById('updateTitle').value;
+        const content = document.getElementById('updateTextArea').value;
+        await updateChannel(title, content);
+        document.getElementById('updateForm').reset();
+    });
+
+    document.getElementById('deleteForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const title = document.getElementById('deleteTitle').value;
+        await deleteChannel(title);
+        document.getElementById('deleteForm').reset();
     });
 
     fetchChannels();

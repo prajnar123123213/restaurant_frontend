@@ -28,7 +28,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
                 <button type="submit">Post</button>
             </form>
         </div>
-        <div id="sandiego"></div>
+        <div id="chile"></div>
     <div>
 </div>
 
@@ -118,7 +118,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     }
 
     /* Channels Container */
-    #sandiego {
+    #chile {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -153,7 +153,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <script type="module">
     import { pythonURI, fetchOptions } from '../assets/js/api/config.js';
-    const container = document.getElementById("sandiego");
+    const container = document.getElementById("chile");
 
     async function fetchUser() {
         const response = await fetch(`${pythonURI}/api/user`, fetchOptions);
@@ -166,7 +166,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     async function fetchChannels() {
         try {
-            const groupName = 'Sandiego';
+            const groupName = 'Chile';
             const responseData = {
                 group_name: groupName,
             };
@@ -213,7 +213,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
         const title = document.getElementById('title').value;
         const content = document.getElementById('textArea').value;
-        const group_id = 35;
+        const group_id = 24;
 
         const channelData = {
             name: title,
@@ -244,4 +244,58 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     });
 
     fetchChannels();
+</script>
+
+<script>
+/**
+ * Calculate new latitude and longitude from a starting point, distance, and bearing.
+ * @param {number} lat - Latitude of the starting point (in degrees).
+ * @param {number} lon - Longitude of the starting point (in degrees).
+ * @param {number} distance - Distance to travel (in kilometers).
+ * @param {number} bearing - Direction of travel (in degrees from North).
+ * @returns {object} - Object with new latitude and longitude.
+ */
+function calculateNewCoordinates(lat, lon, distance, bearing) {
+    const R = 6371; // Earth's radius in kilometers
+
+    // Convert latitude, longitude, and bearing to radians
+    const latRad = (lat * Math.PI) / 180;
+    const lonRad = (lon * Math.PI) / 180;
+    const bearingRad = (bearing * Math.PI) / 180;
+
+    // Calculate new latitude
+    const newLatRad = Math.asin(
+        Math.sin(latRad) * Math.cos(distance / R) +
+        Math.cos(latRad) * Math.sin(distance / R) * Math.cos(bearingRad)
+    );
+
+    // Calculate new longitude
+    const newLonRad = lonRad + Math.atan2(
+        Math.sin(bearingRad) * Math.sin(distance / R) * Math.cos(latRad),
+        Math.cos(distance / R) - Math.sin(latRad) * Math.sin(newLatRad)
+    );
+
+    // Convert back to degrees
+    const newLat = (newLatRad * 180) / Math.PI;
+    const newLon = (newLonRad * 180) / Math.PI;
+
+    return {
+        latitude: newLat,
+        longitude: newLon
+    };
+}
+
+// Example Usage
+const startPoint = { latitude: 37.7749, longitude: -122.4194 }; // San Francisco
+const distance = 50; // 50 kilometers
+const bearing = 45; // 45 degrees (Northeast)
+
+const newPoint = calculateNewCoordinates(
+    startPoint.latitude,
+    startPoint.longitude,
+    distance,
+    bearing
+);
+
+console.log(`New Coordinates: Latitude = ${newPoint.latitude}, Longitude = ${newPoint.longitude}`);
 </script>
