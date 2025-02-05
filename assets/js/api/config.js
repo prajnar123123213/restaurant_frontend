@@ -4,7 +4,7 @@ if (location.hostname === "localhost") {
 } else if (location.hostname === "127.0.0.1") {
         pythonURI = "http://127.0.0.1:8205";
 } else {
-        pythonURI =  "https://flocker.restaurant.com";
+        pythonURI =  "restaurant.stu.nighthawkcodingsociety.com";
 }
 export var javaURI;
 if (location.hostname === "localhost") {
@@ -12,7 +12,7 @@ if (location.hostname === "localhost") {
 } else if (location.hostname === "127.0.0.1") {
         javaURI = "http://127.0.0.1:8205"; //rey
 } else {
-        javaURI = "https://flocker-j.restaurant.com";
+        javaURI = "restaurant.stu.nighthawkcodingsociety.com";
 }
 
 export const fetchOptions = {
