@@ -113,7 +113,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   // prepare HTML result container for new output
   let chineseResultContainer = document.getElementById("chineseResult");
   // prepare URL
-  chineseUrl = "http://127.0.0.1:8887/api/chinese";
   // set options for cross origin header request
   let chineseOptions = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.

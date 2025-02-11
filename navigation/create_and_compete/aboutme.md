@@ -25,8 +25,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   // prepare HTML result container for new output
   let resultContainer = document.getElementById("result");
   
-  // prepare URL
-  url = "http://127.0.0.1:8887/api/students";
+  // prepare URL;
 
   // set options for cross origin header request
   let options = {

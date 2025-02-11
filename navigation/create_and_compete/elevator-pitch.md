@@ -80,7 +80,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let resultContainer = document.getElementById("result");
   
   // prepare URL
-  url = "http://127.0.0.1:8887/api/restaurant";
 
   // set options for cross origin header request
   let options = {
@@ -231,7 +230,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let foodResultContainer = document.getElementById("foodResult");
   
   // prepare URL
-  foodUrl = "http://127.0.0.1:8887/api/food";
 
   // set options for cross origin header request
   let foodOptions = {
@@ -353,8 +351,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let mealResultContainer = document.getElementById("mealResult");
   
   // prepare URL
-  mealUrl = "http://127.0.0.1:8887/api/meal";
-
   // set options for cross origin header request
   let mealOptions = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
