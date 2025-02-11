@@ -88,7 +88,7 @@ img:hover {
     text-align: center;
     margin-top: 20px;">Welcome to South America!</h2>
   <p style="
-    color:rgb(255, 198, 169);
+    color:rgb(252, 250, 248);
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
     font-size: 25px;
     text-align: center;
@@ -96,7 +96,7 @@ img:hover {
 </div>
 <br>
 <center>
-<img src="{{site.baseurl}}/images/createandcompete/southamerica.jpg" alt="South America" width="500" height="500">
+<img src="{{site.baseurl}}/images/createandcompete/southamericaa.jpg" alt="South America" width="500" height="500">
 </center>
 <body>
 <div style="text-align: center; margin-top: 20px;">
