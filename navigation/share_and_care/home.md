@@ -10,7 +10,7 @@ menu: nav/share_and_care.html
 <head>
 <style>
 body {
-  background: linear-gradient(to bottom, #A685E2, #3D0075);
+  background: linear-gradient(to bottom,rgb(224, 103, 103),rgb(200, 48, 17));
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
 }
 .myDiv {
   border: 5px solid white;
-  background: linear-gradient(to bottom right, #D8B4F8, #A85CF9); /* Gradient background for a modern look */
+  background: linear-gradient(to bottom right,rgb(249, 169, 157),rgb(219, 75, 75)); /* Gradient background for a modern look */
   text-align: center;
   padding: 30px;
   border-radius: 15px; /* Rounded corners for a softer look */
@@ -33,15 +33,15 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* More pronounced shadow effect */
 }
 img {
-  border: 5px solid rgb(234, 181, 236);
+  border: 5px solid rgb(255, 255, 255);
   transition: transform 0.4s ease; /* Smooth zoom effect */
 }
 img:hover {
   transform: scale(1.05); /* Zoom image slightly on hover */
 }
 .button {
-  background-color: rgb(244, 236, 253); /* Matching purple shade */
-  color: rgb(88, 49, 118);
+  background-color: rgb(238, 230, 230); /* Matching purple shade */
+  color: rgb(137, 24, 24);
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -55,7 +55,7 @@ img:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .button:hover {
-  background-color: rgb(214, 200, 233); /* Slightly darker purple for hover effect */
+  background-color: rgb(230, 177, 177); /* Slightly darker purple for hover effect */
   color: white; /* Change text color on hover */
   transform: translateY(-5px); /* Button lifts slightly on hover */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
@@ -82,7 +82,7 @@ img:hover {
     text-align: center; /* Centered text */
     margin-top: 20px;">Welcome to Asia!</h2>
   <p style="
-    color: #FCDBFF;
+    color:rgb(255, 255, 255);
     font-family: 'Comic Sans MS', 'Brush Script MT', cursive; /* Fun and playful font */
     font-size: 25px; /* Adjusted size for emphasis */
     text-align: center; /* Centered text */
