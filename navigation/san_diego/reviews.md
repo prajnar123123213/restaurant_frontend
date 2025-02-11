@@ -239,8 +239,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
 <script>
     
-    // Define the API URL
-    const apiUrl = 'http://127.0.0.1:8887/api/channel/getdata'; // Update with your correct API URL
+    // Define the API URLUpdate with your correct API URL
 
     // Function to handle form submission and fetching of channels
     async function handlePostAndFetchChannels() {
@@ -316,7 +315,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
             //const response = await fetch(`${pythonURI}/api/channel`, {
             console.log("posting")
 
-            const response = await fetch(`http://127.0.0.1:8887/api/channel`, {
+            const response = await fetch(``, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

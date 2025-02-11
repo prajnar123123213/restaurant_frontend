@@ -138,7 +138,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let chinaResultContainer = document.getElementById("chinaResult");
   
   // prepare URL
-  chinaUrl = "http://127.0.0.1:8887/api/chinese";
 
   // set options for cross origin header request
   let chinaOptions = {
@@ -200,7 +199,6 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   let chinaresultContainer = document.getElementById("chinaresult");
   
   // prepare URL
-  url = "http://127.0.0.1:5001/api/data";
 
   // set options for cross origin header request
   let options = {
