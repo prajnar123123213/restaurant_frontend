@@ -88,5 +88,5 @@ img:hover {
     margin-top: 10px;">Discover the amazing city of San Diego, full of rich history, vibrant culture, and beautiful scenery. From the bustling downtown areas to the relaxing coastal spots, check out some of the best restaurants and cuisines the city has to offer!</p>
 </div>
 <center>
-    <img src="{{site.baseurl}}/images/sandiego.jpg" alt="San Diego" width="500" height="500">
+    <img src="{{site.baseurl}}/images/createandcompete/sandiegoo.jpg" alt="San Diego" width="500" height="500">
 </center>

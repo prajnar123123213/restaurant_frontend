@@ -8,6 +8,11 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 
   <style>
+  
+  h1 {
+    animation: fadeIn 1.5s ease-in-out; /* fade in to avoid choppy maps */
+  }
+
   .restaurant-row {
     display: flex;
     justify-content: space-between;

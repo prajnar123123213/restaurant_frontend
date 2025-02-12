@@ -9,7 +9,7 @@ menu: nav/create_and_compete.html
 <head>
 <style>
 body {
-  background: linear-gradient(to bottom,rgb(226, 133, 207),rgb(117, 0, 62));
+  background: linear-gradient(to bottom,rgb(108, 221, 100),rgb(6, 117, 0));
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
 }
 .myDiv {
   border: 5px solid white;
-  background: linear-gradient(to bottom right,rgb(248, 180, 210),rgb(146, 67, 114)); /* Gradient background for a modern look */
+  background: linear-gradient(to bottom right,rgb(86, 170, 94),rgb(45, 87, 38)); /* Gradient background for a modern look */
   text-align: center;
   padding: 30px;
   border-radius: 15px; /* Rounded corners for a softer look */
@@ -32,7 +32,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* More pronounced shadow effect */
 }
 img {
-  border: 5px solid rgb(234, 181, 236);
+  border: 5px solid rgb(255, 255, 255);
   transition: transform 0.4s ease; /* Smooth zoom effect */
 }
 img:hover {
@@ -91,7 +91,7 @@ img:hover {
 </div>
 
 <center>
-  <img src="{{site.baseurl}}/images/createandcompete/africa.jpeg" alt= "Africa" width="500" height="500">
+  <img src="{{site.baseurl}}/images/createandcompete/african.jpg" alt= "Africa" width="500" height="500">
 </center>
 <a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch">
 <button onmouseover="this.style.backgroundColor='#bc8f8f'; this.style.transform='scale(1.05)';" 
