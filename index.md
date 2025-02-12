@@ -64,19 +64,19 @@ Choose where to start your culinary journey... </h3>
 <br>
 
 <div class="button-container">
-<a href="{{site.baseurl}}/create_and_compete/home/" class="button" style="background-color:rgb(108, 221, 100);">
+<a href="{{site.baseurl}}/create_and_compete/home" class="button" style="background-color:rgb(108, 221, 100);">
     Africa
 </a>
 
-<a href="{{site.baseurl}}/share_and_care/home/" class="button" style="background-color:rgb(219, 75, 75);">
+<a href="{{site.baseurl}}/share_and_care/home" class="button" style="background-color:rgb(219, 75, 75);">
     Asia
 </a>
 
-<a href="{{site.baseurl}}/rate_and_relate/home/" class="button" style="background-color:rgb(255, 123, 67);">
+<a href="{{site.baseurl}}/rate_and_relate/home" class="button" style="background-color:rgb(255, 123, 67);">
     South America
 </a>
 
-<a href="{{site.baseurl}}/san_diego/home/" class="button" style="background-color:rgb(70, 163, 255);">
+<a href="{{site.baseurl}}/san_diego/home" class="button" style="background-color:rgb(70, 163, 255);">
     San Diego 😎
 </a>
 </div>
