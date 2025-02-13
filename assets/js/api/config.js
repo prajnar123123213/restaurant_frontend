@@ -4,15 +4,15 @@ if (location.hostname === "localhost") {
 } else if (location.hostname === "127.0.0.1") {
         pythonURI = "http://127.0.0.1:8205";
 } else {
-        pythonURI = "http://restaurant.stu.nighthawkcodingsociety.com";
+        pythonURI = "https://restaurant.stu.nighthawkcodingsociety.com";
 }
 export var javaURI;
 if (location.hostname === "localhost") {
-        javaURI = "http://localhost:8205";
+        javaURI = "http://localhost:8885";
 } else if (location.hostname === "127.0.0.1") {
-        javaURI = "http://127.0.0.1:8205"; //rey
+        javaURI = "http://127.0.0.1:8885"; //rey
 } else {
-        javaURI = "https://restaurant.stu.nighthawkcodingsociety.com";
+        javaURI = "https://flocker-j.nighthawkcodingsociety.com";
 }
 
 export const fetchOptions = {
