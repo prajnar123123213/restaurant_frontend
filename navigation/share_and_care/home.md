@@ -7,7 +7,6 @@ menu: nav/share_and_care.html
 ---
 
 <html>
-<head>
 <style>
 body {
   background: linear-gradient(to bottom,rgb(224, 103, 103),rgb(200, 48, 17));
@@ -15,6 +14,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+.site-header {
+  background-color: black;
+  color: white;
 }
 .myDiv {
   border: 5px solid white;
@@ -71,9 +74,8 @@ img:hover {
   }
 }
 </style>
-</head>
-<body>
 
+<body>
 <div class="myDiv">
   <h2 style="
     color: white;

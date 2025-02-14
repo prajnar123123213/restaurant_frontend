@@ -6,7 +6,6 @@ permalink: /san_diego/home
 menu: nav/san_diego.html
 ---
 <html>
-<head>
 <style>
 body {
   background: linear-gradient(to bottom,rgb(70, 163, 255),rgb(0, 85, 255));
@@ -14,6 +13,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+.site-header {
+  background-color: black;
+  color: white;
 }
 .myDiv {
   border: 5px solid white;
@@ -70,9 +73,8 @@ img:hover {
   }
 }
 </style>
-</head>
-<body>
 
+<body>
 <div class="myDiv">
   <h2 style="
     color: white;
@@ -90,3 +92,4 @@ img:hover {
 <center>
     <img src="{{site.baseurl}}/images/createandcompete/sandiegoo.jpg" alt="San Diego" width="500" height="500">
 </center>
+</body>

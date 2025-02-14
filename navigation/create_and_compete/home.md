@@ -6,7 +6,6 @@ permalink: /create_and_compete/home
 menu: nav/create_and_compete.html
 ---
 <html>
-<head>
 <style>
 body {
   background: linear-gradient(to bottom,rgb(108, 221, 100),rgb(6, 117, 0));
@@ -14,6 +13,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+.site-header {
+  background-color: black;
+  color: white;
 }
 .myDiv {
   border: 5px solid white;
@@ -70,9 +73,8 @@ img:hover {
   }
 }
 </style>
-</head>
-<body>
 
+<body>
 <div class="myDiv" id="post-container">
   <h2 id="post-title" style="
     color: white;

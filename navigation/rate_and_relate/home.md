@@ -7,7 +7,6 @@ menu: nav/rate_and_relate.html
 ---
 
 <html>
-<head>
 <style>
 body {
   background: linear-gradient(to bottom, rgb(255, 123, 67), rgb(250, 75, 0)); /* More appealing gradient */
@@ -15,6 +14,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+.site-header {
+  background-color: black;
+  color: white;
 }
 .myDiv {
   border: 5px solid white;
@@ -79,7 +82,8 @@ img:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 </style>
-</head>
+
+<body>
 <div class="myDiv">
   <h2 style="
     color: white;
@@ -98,7 +102,6 @@ img:hover {
 <center>
 <img src="{{site.baseurl}}/images/createandcompete/southamericaa.jpg" alt="South America" width="500" height="500">
 </center>
-<body>
 <div style="text-align: center; margin-top: 20px;">
   <a href="https://prajnar123123213.github.io/restaurant_frontend/share_and_care/revvit/"
     class="button"> Find Restaurants
