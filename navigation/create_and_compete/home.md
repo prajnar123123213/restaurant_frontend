@@ -92,9 +92,6 @@ img:hover {
 <center>
   <img src="{{site.baseurl}}/images/createandcompete/african.jpg" alt= "Africa" width="500" height="500">
 </center>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://prajnar123123213.github.io/restaurant_frontend/create_and_compete/elevatorpitch" class="button">
-Find Restaurants</a>
-</div>
+
 </body>
 </html>
