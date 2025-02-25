@@ -103,7 +103,7 @@ img:hover {
 <img src="{{site.baseurl}}/images/createandcompete/southamericaa.jpg" alt="South America" width="500" height="500">
 </center>
 <div style="text-align: center; margin-top: 20px;">
-  <a href="https://prajnar123123213.github.io/restaurant_frontend/share_and_care/revvit/"
+  <a href="https://prajnar123123213.github.io/restaurant_frontend/rate_and_relate/flavor_fusion/"
     class="button"> Find Restaurants
   </a>
 </div>
