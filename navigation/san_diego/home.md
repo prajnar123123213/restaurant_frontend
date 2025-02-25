@@ -93,7 +93,7 @@ img:hover {
     <img src="{{site.baseurl}}/images/createandcompete/sandiegoo.jpg" alt="San Diego" width="500" height="500">
 </center>
 <div style="text-align: center; margin-top: 20px;">
-  <a href="https://prajnar123123213.github.io/restaurant_frontend/share_and_care/revvit/"
+  <a href="https://prajnar123123213.github.io/restaurant_frontend/san_diego/explore/"
     class="button"> Find Restaurants
   </a>
 </div>
