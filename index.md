@@ -84,18 +84,104 @@ Choose where to start your culinary journey... </h3>
 <html>
 <head>
     <title>Recipe Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #f8c291;
+        }
+        .container {
+            background: #2a2a3a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: auto;
+        }
+        .diet-options {
+            margin: 10px 0;
+            color: #ffbe76;
+        }
+        .diet-options label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background: #3b3b4f;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff4757;
+        }
+        #results {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 400px;
+            margin: auto;
+            background: #3b3b4f;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            color: #dcdde1;
+        }
+    </style>
 </head>
 <body>
     <h1>Search for a Recipe Below</h1>
-    <div> select a diet </div>
-    <div>
-        <label><input type="checkbox" id="glutenFree" value="gluten free"> Gluten Free</label>
-        <label><input type="checkbox" id="keto" value="keto"> Keto</label>
-        <label><input type="checkbox" id="lowCarb" value="low carb"> Low Carb</label>
+<style>
+    h1 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: #ff6b81;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(45deg, #ff6b81, #f8c291, #ffb3ba);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        transition: all 1s ease;
+    }
+    h1:hover {
+        color: #ff4757;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+</style>
+    <div class="container">
+        <div class="diet-options">Select a diet:</div>
+        <div class="diet-options">
+            <label><input type="checkbox" id="glutenFree" value="gluten free"> Gluten Free</label>
+            <label><input type="checkbox" id="keto" value="keto"> Keto</label>
+            <label><input type="checkbox" id="lowCarb" value="low carb"> Low Carb</label>
+        </div>
+        <input type="text" id="searchBox" placeholder="Enter a dish...">
+        <button onclick="searchRecipe()">Search</button>
     </div>
-    <input type="text" id="searchBox" placeholder="Enter a dish:">
-    <button onclick="searchRecipe()">Search</button>
     <div id="results"></div>
+</body>
     <script>
         async function searchRecipe() {
             const query = document.getElementById("searchBox").value;

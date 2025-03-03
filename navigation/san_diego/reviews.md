@@ -315,7 +315,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
             //const response = await fetch(`${pythonURI}/api/channel`, {
             console.log("posting")
 
-            const response = await fetch(``, {
+            const response = await fetch(`${pythonURI}/api/channel/getdata`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
