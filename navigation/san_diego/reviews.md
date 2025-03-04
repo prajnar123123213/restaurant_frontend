@@ -238,7 +238,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     } -->
 
 <script type="module">
-    import {pythonURI,fetchOptions } from '../assets/js/api/config.js';
+    import {pythonURI,fetchOptions } from 'https://prajnar123123213.github.io/restaurant_frontend/assets/js/api/config.js';
     // Define the API URLUpdate with your correct API URL
 
     // Function to handle form submission and fetching of channels
