@@ -237,7 +237,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
         }
     } -->
 
-<script>
+<script type="module">
     import {pythonURI,fetchOptions } from '../assets/js/api/config.js';
     // Define the API URLUpdate with your correct API URL
 
