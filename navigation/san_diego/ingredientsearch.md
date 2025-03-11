@@ -87,7 +87,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 </div>
 
 <script>
-    const apiKey = '604b7a3a43354378ac49da4bb18925da'; // Replace with your API key
+    const apiKey = 'c4e38cbf4c824068aed1be9b93f9766a'; // Replace with your API key
 
     function searchIngredients() {
         const ingredientSearch = document.getElementById("ingredientSearch").value.trim();
