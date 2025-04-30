@@ -7,7 +7,6 @@ menu: nav/san_diego.html
 author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 ---
 
-<!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8" />
   <title>Recipe Suggestion App</title>
@@ -30,15 +29,15 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     h1 {
       text-align: center;
+      color: #333; /* Dark text for better contrast */
     }
 
-    label,
-    select,
-    button {
+    label, select, button {
       display: block;
       width: 100%;
       margin-top: 15px;
       font-size: 16px;
+      color: #333; /* Dark text for labels */
     }
 
     button {
@@ -58,6 +57,15 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       margin-top: 20px;
       font-weight: bold;
       text-align: center;
+      color: #333; /* Dark text for output */
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
   </style>
 
@@ -81,18 +89,18 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   <script>
     // List of recipes with both flavor and type
     const recipes = [
-      { name: "Ice cream", flavor: "sweet", type: "snack" },
-      { name: "Apple Pie slice", flavor: "sweet", type: "snack" },
+      { name: "Chocolate Cake", flavor: "sweet", type: "snack" },
+      { name: "Apple Pie", flavor: "sweet", type: "snack" },
       { name: "Grilled Cheese Sandwich", flavor: "savory", type: "snack" },
-      { name: "Beef noodles", flavor: "savory", type: "main" },
+      { name: "Beef Stew", flavor: "savory", type: "main" },
       { name: "Spicy Tofu Stir-Fry", flavor: "spicy", type: "main" },
       { name: "Hot Wings", flavor: "spicy", type: "snack" },
-      { name: "Sweet chicken curry", flavor: "sweet", type: "main" },
+      { name: "Sweet and Sour Chicken", flavor: "sweet", type: "main" },
       { name: "Spicy Chili", flavor: "spicy", type: "main" },
-      { name: "Savory waffles", flavor: "savory", type: "main" }
+      { name: "Savory Pancakes", flavor: "savory", type: "main" }
     ];
 
-    // Procedure to get a recipe suggestion given to users
+    // Procedure to get a recipe suggestion
     function suggestRecipe(flavor, type) {
       const filtered = recipes.filter(
         (recipe) => recipe.flavor === flavor && recipe.type === type
