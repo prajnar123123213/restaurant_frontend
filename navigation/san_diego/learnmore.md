@@ -29,7 +29,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
 
     h1 {
       text-align: center;
-      color: #333; /* Dark text for better contrast */
+      color: #333;
     }
 
     label, select, button {
@@ -37,7 +37,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       width: 100%;
       margin-top: 15px;
       font-size: 16px;
-      color: #333; /* Dark text for labels */
+      color: #333; 
     }
 
     button {
@@ -57,7 +57,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       margin-top: 20px;
       font-weight: bold;
       text-align: center;
-      color: #333; /* Dark text for output */
+      color: #333;
     }
 
     select {
@@ -87,7 +87,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
   </div>
 
   <script>
-    // List of recipes with both flavor and type
+    
     const recipes = [
       { name: "Chocolate Cake", flavor: "sweet", type: "snack" },
       { name: "Apple Pie", flavor: "sweet", type: "snack" },
@@ -100,7 +100,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       { name: "Savory Pancakes", flavor: "savory", type: "main" }
     ];
 
-    // Procedure to get a recipe suggestion
+    
     function suggestRecipe(flavor, type) {
       const filtered = recipes.filter(
         (recipe) => recipe.flavor === flavor && recipe.type === type
@@ -114,7 +114,7 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
       }
     }
 
-    // When button is clicked, get values and call the function
+    
     document.getElementById("suggestBtn").addEventListener("click", () => {
       const flavor = document.getElementById("flavor").value;
       const type = document.getElementById("type").value;
@@ -123,3 +123,5 @@ author: Mirabelle, Arshia, Prajna, Claire, Zoe, Sanya
     });
   </script>
 </html>
+
+hi
